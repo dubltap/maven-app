@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Maven - Find High-Payout Affiliate Opportunities in 60 Seconds</title>
+  <meta name="description" content="AI-powered affiliate opportunity finder. Discover your highest-converting programs, get a 48-hour sprint plan, and start earning commissions fast.">
+  <meta property="og:title" content="Market Maven - Find Your Best Affiliate Opportunity">
+  <meta property="og:description" content="I just scored 94/100 on my affiliate match! Find your highest-converting programs free.">
+  <meta property="og:image" content="https://marketmaven.dubltap.io/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /*
+     * â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     * MARKET MAVEN - GOLDEN RATIO DESIGN SYSTEM
+     * Ï† (Phi) = 1.618033988749895
+     * 
+     * "Revenue is the only north star"
+     * â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     */
+    
+    :root {
+      /* â•â• GOLDEN CONSTANTS â•â• */
+      --phi: 1.618033988749895;
+      --phi-inv: 0.618033988749895;
+      
+      /* â•â• GOLDEN TYPOGRAPHY â•â• */
+      --text-xs: 10px;
+      --text-sm: 13px;
+      --text-base: 16px;
+      --text-lg: 21px;
+      --text-xl: 26px;
+      --text-2xl: 34px;
+      --text-3xl: 42px;
+      --text-4xl: 55px;
+      --text-5xl: 68px;
+      
+      /* â•â• FIBONACCI SPACING â•â• */
+      --space-3xs: 3px;
+      --space-2xs: 5px;
+      --space-xs: 8px;
+      --space-sm: 13px;
+      --space-md: 21px;
+      --space-lg: 34px;
+      --space-xl: 55px;
+      --space-2xl: 89px;
+      
+      /* â•â• GOLDEN TIMING â•â• */
+      --duration-fast: 162ms;
+      --duration-base: 262ms;
+      --duration-slow: 424ms;
+      
+      /* â•â• GOLDEN EASING â•â• */
+      --ease-golden: cubic-bezier(0.382, 0, 0.618, 1);
+      --ease-golden-out: cubic-bezier(0, 0.618, 0.382, 1);
+      --ease-golden-bounce: cubic-bezier(0.382, 1.618, 0.618, 1);
+      
+      /* â•â• MONEY PURPLE/BLUE THEME â•â• */
+      --bg-dark: #09090f;
+      --bg-card: #12121a;
+      --bg-elevated: #1a1a25;
+      
+      --purple-400: #a78bfa;
+      --purple-500: #8b5cf6;
+      --purple-600: #7c3aed;
+      --blue-400: #60a5fa;
+      --blue-500: #3b82f6;
+      --cyan-400: #22d3ee;
+      --green-400: #4ade80;
+      --gold-400: #fbbf24;
+      --red-400: #f87171;
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      
+      /* â•â• GRADIENTS â•â• */
+      --gradient-brand: linear-gradient(137.5deg, var(--purple-500), var(--blue-500));
+      --gradient-money: linear-gradient(137.5deg, var(--purple-400), var(--cyan-400));
+      --gradient-gold: linear-gradient(137.5deg, var(--gold-400), #f59e0b);
+      --gradient-glow: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15), transparent 70%);
+      
+      /* â•â• SHADOWS â•â• */
+      --shadow-sm: 0 2px 5px rgba(0,0,0,0.3);
+      --shadow-md: 0 5px 13px rgba(0,0,0,0.35);
+      --shadow-lg: 0 13px 34px rgba(0,0,0,0.4);
+      --shadow-glow: 0 0 34px rgba(139, 92, 246, 0.25);
+      
+      /* â•â• RADIUS â•â• */
+      --radius-sm: 5px;
+      --radius-md: 8px;
+      --radius-lg: 13px;
+      --radius-xl: 21px;
+      --radius-2xl: 34px;
+      --radius-full: 9999px;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: var(--phi);
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* â•â• ANIMATED BACKGROUND â•â• */
+    .bg-effects {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    
+    .glow-orb {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: var(--gradient-glow);
+      filter: blur(100px);
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+    
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.1); }
+    }
+    
+    .glow-orb:nth-child(1) { top: -20%; left: -10%; }
+    .glow-orb:nth-child(2) { bottom: -20%; right: -10%; animation-delay: 2s; background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%); }
+    
+    .grid-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: 
+        linear-gradient(rgba(139,92,246,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139,92,246,0.03) 1px, transparent 1px);
+      background-size: 55px 55px;
+    }
+    
+    /* â•â• ANNOUNCEMENT BAR â•â• */
+    .announcement-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: var(--gradient-brand);
+      color: white;
+      padding: var(--space-sm) var(--space-lg);
+      text-align: center;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      z-index: 1000;
+      cursor: pointer;
+    }
+    
+    body.has-announcement { padding-top: 42px; }
+    
+    /* â•â• HEADER â•â• */
+    header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+      animation: fadeUp var(--duration-slow) var(--ease-golden-out);
+    }
+    
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(34px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: var(--text-lg);
+      font-weight: 700;
+      margin-bottom: var(--space-md);
+      background: var(--gradient-money);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .logo-icon { font-size: var(--text-2xl); -webkit-text-fill-color: initial; }
+    
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(var(--text-3xl), 8vw, var(--text-4xl));
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: var(--space-sm);
+    }
+    
+    h1 .highlight {
+      background: var(--gradient-money);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .subtitle {
+      font-size: var(--text-lg);
+      color: var(--text-secondary);
+    }
+    
+    /* â•â• SOCIAL PROOF â•â• */
+    .social-proof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-lg);
+      margin-top: var(--space-lg);
+      flex-wrap: wrap;
+    }
+    
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+    }
+    
+    .proof-number {
+      font-weight: 700;
+      color: var(--purple-400);
+    }
+    
+    /* â•â• STAGES â•â• */
+    .stage { display: none; animation: fadeUp var(--duration-slow) var(--ease-golden-out); }
+    .stage.active { display: block; }
+    
+    /* â•â• QUIZ CARD â•â• */
+    .quiz-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.15);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .quiz-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient-brand);
+    }
+    
+    /* â•â• PROGRESS BAR â•â• */
+    .progress-bar {
+      display: flex;
+      gap: var(--space-xs);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .progress-step {
+      flex: 1;
+      height: 5px;
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius-full);
+    }
+    
+    .progress-step.active { background: var(--purple-500); }
+    .progress-step.completed { background: var(--purple-400); }
+    
+    .question-number {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .question-text {
+      font-size: var(--text-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-lg);
+    }
+    
+    /* â•â• OPTIONS â•â• */
+    .options-grid {
+      display: grid;
+      gap: var(--space-sm);
+    }
+    
+    .option-btn {
+      padding: var(--space-md) var(--space-lg);
+      background: var(--bg-elevated);
+      border: 2px solid transparent;
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      transition: all var(--duration-base) var(--ease-golden);
+      font-family: inherit;
+      font-size: var(--text-base);
+      color: var(--text-primary);
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    
+    .option-btn:hover {
+      border-color: rgba(139,92,246,0.4);
+      transform: translateX(5px);
+    }
+    
+    .option-btn.selected {
+      border-color: var(--purple-500);
+      background: rgba(139,92,246,0.1);
+    }
+    
+    .option-icon { font-size: var(--text-xl); }
+    .option-label { font-weight: 500; }
+    .option-desc { font-size: var(--text-sm); color: var(--text-muted); margin-top: 2px; }
+    
+    /* â•â• NAV BUTTONS â•â• */
+    .nav-row {
+      display: flex;
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+    }
+    
+    .btn {
+      flex: 1;
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--radius-lg);
+      font-family: inherit;
+      font-size: var(--text-base);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--duration-base) var(--ease-golden);
+    }
+    
+    .btn-primary {
+      background: var(--gradient-brand);
+      color: white;
+      border: none;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+    
+    .btn-primary:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-secondary);
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+    
+    /* â•â• LOADING â•â• */
+    .loading-container {
+      text-align: center;
+      padding: var(--space-2xl) 0;
+    }
+    
+    .loading-icon {
+      font-size: var(--text-5xl);
+      margin-bottom: var(--space-lg);
+      animation: pulse 1.618s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    
+    .loading-text {
+      font-size: var(--text-lg);
+      font-weight: 500;
+      margin-bottom: var(--space-md);
+    }
+    
+    .loading-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    
+    .loading-step {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      opacity: 0.5;
+      transition: all var(--duration-base);
+    }
+    
+    .loading-step.active { color: var(--purple-400); opacity: 1; }
+    .loading-step.completed { color: var(--text-secondary); opacity: 0.8; }
+    
+    .step-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-xs);
+    }
+    
+    .loading-step.completed .step-check {
+      background: var(--purple-500);
+      border-color: var(--purple-500);
+    }
+    
+    /* â•â• RESULTS â•â• */
+    .results-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+    
+    .results-header h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-sm);
+    }
+    
+    /* â•â• SCORE CARD â•â• */
+    .score-card {
+      background: var(--bg-card);
+      border: 2px solid var(--purple-500);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-xl);
+      text-align: center;
+      margin-bottom: var(--space-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .score-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--gradient-glow);
+      opacity: 0.3;
+    }
+    
+    .score-label {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-xs);
+      position: relative;
+    }
+    
+    .score-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: var(--text-5xl);
+      font-weight: 800;
+      background: var(--gradient-money);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+    
+    .score-breakdown {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+      position: relative;
+    }
+    
+    .score-factor {
+      text-align: center;
+    }
+    
+    .factor-value {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--purple-400);
+    }
+    
+    .factor-label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    
+    /* â•â• OPPORTUNITY CARD â•â• */
+    .opportunity-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.15);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+      position: relative;
+      transition: all var(--duration-base) var(--ease-golden);
+    }
+    
+    .opportunity-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .opportunity-card.featured {
+      border-color: var(--purple-500);
+    }
+    
+    .opportunity-card.featured::before {
+      content: 'ðŸ† TOP MATCH';
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-sm);
+      background: var(--gradient-brand);
+      color: white;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      padding: var(--space-3xs) var(--space-sm);
+      border-radius: var(--radius-sm);
+    }
+    
+    .opp-header {
+      display: flex;
+      gap: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+    
+    .opp-icon {
+      width: 55px;
+      height: 55px;
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-2xl);
+    }
+    
+    .opp-title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    
+    .opp-subtitle {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+    }
+    
+    .opp-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-sm);
+      padding: var(--space-md);
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-md);
+    }
+    
+    .stat-item { text-align: center; }
+    
+    .stat-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--purple-400);
+    }
+    
+    .stat-label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    
+    .opp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs);
+    }
+    
+    .tag {
+      padding: var(--space-3xs) var(--space-sm);
+      background: rgba(139,92,246,0.15);
+      border-radius: var(--radius-sm);
+      font-size: var(--text-xs);
+      color: var(--purple-400);
+    }
+    
+    .tag.hot { background: rgba(251,191,36,0.15); color: var(--gold-400); }
+    .tag.easy { background: rgba(74,222,128,0.15); color: var(--green-400); }
+    
+    /* â•â• SPRINT PLAN â•â• */
+    .sprint-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.1);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    
+    .sprint-title {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    
+    .sprint-day {
+      margin-bottom: var(--space-md);
+    }
+    
+    .day-header {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--purple-400);
+      margin-bottom: var(--space-sm);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+    
+    .day-tasks {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    
+    .task-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--bg-elevated);
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
+    }
+    
+    .task-check {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--purple-500);
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    /* â•â• PROGRAM TABLE â•â• */
+    .programs-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.1);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+      overflow-x: auto;
+    }
+    
+    .programs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-sm);
+    }
+    
+    .programs-table th {
+      text-align: left;
+      padding: var(--space-sm);
+      color: var(--text-muted);
+      font-weight: 500;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .programs-table td {
+      padding: var(--space-sm);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .programs-table tr:hover {
+      background: rgba(139,92,246,0.05);
+    }
+    
+    .program-name {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    .commission-badge {
+      background: rgba(74,222,128,0.15);
+      color: var(--green-400);
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+    }
+    
+    /* â•â• SHARE CARD â•â• */
+    .share-card {
+      background: linear-gradient(137.5deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15));
+      border: 2px solid var(--purple-500);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
+    
+    .share-card h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .share-card p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-bottom: var(--space-md);
+    }
+    
+    .share-buttons {
+      display: flex;
+      gap: var(--space-sm);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .share-btn {
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-lg);
+      border: none;
+      font-family: inherit;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      transition: all var(--duration-base);
+    }
+    
+    .share-btn:hover { transform: scale(1.05); }
+    .share-btn.twitter { background: #1da1f2; color: white; }
+    .share-btn.linkedin { background: #0a66c2; color: white; }
+    .share-btn.copy { background: white; color: #000; }
+    
+    /* â•â• REFERRAL CARD â•â• */
+    .referral-card {
+      background: linear-gradient(137.5deg, #fef3c7, #fde68a);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      text-align: center;
+      color: #78350f;
+      margin-bottom: var(--space-md);
+    }
+    
+    .referral-card h3 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+    .referral-card p { font-size: var(--text-sm); margin-bottom: var(--space-md); }
+    
+    .referral-progress {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      margin-bottom: var(--space-md);
+    }
+    
+    .referral-dot {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(120,53,15,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    
+    .referral-dot.filled { background: #78350f; color: white; }
+    
+    .referral-link-box {
+      display: flex;
+      gap: var(--space-xs);
+    }
+    
+    .referral-link-box input {
+      flex: 1;
+      padding: var(--space-sm);
+      border: 2px solid rgba(120,53,15,0.3);
+      border-radius: var(--radius-md);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: var(--text-xs);
+      background: white;
+    }
+    
+    .referral-link-box button {
+      padding: var(--space-sm) var(--space-md);
+      background: #78350f;
+      color: white;
+      border: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+    /* â•â• CTA SECTION â•â• */
+    .cta-section {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.1);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
+    
+    .cta-section h3 { font-size: var(--text-xl); margin-bottom: var(--space-xs); }
+    .cta-section p { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-md); }
+    
+    .cta-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+      text-align: left;
+    }
+    
+    .cta-feature {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: var(--text-sm);
+    }
+    
+    .cta-feature::before {
+      content: 'âœ“';
+      color: var(--green-400);
+      font-weight: bold;
+    }
+    
+    /* â•â• KILL/SCALE RULES â•â• */
+    .rules-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.1);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+    
+    .rule-section h4 {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+    
+    .rule-section.kill h4 { color: var(--red-400); }
+    .rule-section.scale h4 { color: var(--green-400); }
+    
+    .rule-list {
+      list-style: none;
+      font-size: var(--text-sm);
+    }
+    
+    .rule-list li {
+      padding: var(--space-xs) 0;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-xs);
+    }
+    
+    .rule-list li::before { content: 'â€¢'; color: var(--text-muted); }
+    
+    /* â•â• MODALS â•â• */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-lg);
+    }
+    
+    .modal-overlay.active { display: flex; }
+    
+    .modal {
+      background: var(--bg-card);
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: var(--radius-2xl);
+      max-width: 420px;
+      width: 100%;
+      padding: var(--space-xl);
+      position: relative;
+      animation: fadeUp var(--duration-slow) var(--ease-golden-out);
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: var(--text-xl);
+      cursor: pointer;
+    }
+    
+    .modal-icon { font-size: var(--text-4xl); text-align: center; margin-bottom: var(--space-md); }
+    .modal h2 { font-size: var(--text-xl); text-align: center; margin-bottom: var(--space-xs); }
+    .modal .subtitle { text-align: center; font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-lg); }
+    
+    .modal-input {
+      width: 100%;
+      padding: var(--space-md);
+      background: var(--bg-elevated);
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      font-family: inherit;
+      font-size: var(--text-base);
+      color: var(--text-primary);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .modal-input:focus { outline: none; border-color: var(--purple-500); }
+    .modal-input::placeholder { color: var(--text-muted); }
+    
+    .modal-benefits {
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+    
+    .modal-benefits ul { list-style: none; font-size: var(--text-sm); }
+    .modal-benefits li { padding: var(--space-xs) 0; display: flex; align-items: center; gap: var(--space-sm); }
+    .modal-benefits li::before { content: 'âœ“'; color: var(--green-400); font-weight: bold; }
+    
+    .modal-terms { text-align: center; font-size: var(--text-xs); color: var(--text-muted); margin-top: var(--space-md); }
+    .modal-terms a { color: var(--purple-400); }
+    
+    /* â•â• TOAST â•â• */
+    .toast {
+      position: fixed;
+      bottom: var(--space-lg);
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--bg-card);
+      border: 1px solid var(--purple-500);
+      color: var(--text-primary);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--radius-lg);
+      font-size: var(--text-sm);
+      z-index: 3000;
+      transition: transform var(--duration-base) var(--ease-golden-bounce);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    
+    .toast.show { transform: translateX(-50%) translateY(0); }
+    
+    /* â•â• FOOTER â•â• */
+    .footer {
+      text-align: center;
+      padding: var(--space-lg) 0;
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+    }
+    
+    .footer a { color: var(--purple-400); text-decoration: none; }
+    
+    .hidden { display: none !important; }
+    
+    @media (max-width: 600px) {
+      .score-breakdown { grid-template-columns: repeat(2, 1fr); }
+      .opp-stats { grid-template-columns: repeat(2, 1fr); }
+      .rules-grid { grid-template-columns: 1fr; }
+      .cta-features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="has-announcement">
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" onclick="showUpgradeModal()">
+    ðŸ”¥ <span id="liveCount">847</span> affiliates scored today â€” <strong>Find your highest-payout opportunity â†’</strong>
+  </div>
+  
+  <!-- Background -->
+  <div class="bg-effects">
+    <div class="grid-bg"></div>
+    <div class="glow-orb"></div>
+    <div class="glow-orb"></div>
+  </div>
+  
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <span class="logo-icon">ðŸ“Š</span>
+        Market Maven
+      </div>
+      <h1>Find <span class="highlight">High-Payout</span> Affiliate Wins Fast</h1>
+      <p class="subtitle">60-second quiz â†’ Scored opportunities â†’ 48-hour sprint plan</p>
+      
+      <div class="social-proof">
+        <div class="proof-item">
+          ðŸ’° <span class="proof-number" id="totalEarned">$2.4M</span> tracked commissions
+        </div>
+        <div class="proof-item">
+          âš¡ <span class="proof-number">14 days</span> avg. first sale
+        </div>
+      </div>
+    </header>
+    
+    <!-- Quiz Stage -->
+    <div class="stage active" id="quizStage">
+      <div class="quiz-card">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="question-number" id="questionNumber"></div>
+        <div class="question-text" id="questionText"></div>
+        <div class="options-grid" id="optionsGrid"></div>
+        <div class="nav-row">
+          <button class="btn btn-secondary hidden" id="backBtn" onclick="prevQuestion()">â† Back</button>
+          <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Continue â†’</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Loading Stage -->
+    <div class="stage" id="loadingStage">
+      <div class="quiz-card">
+        <div class="loading-container">
+          <div class="loading-icon">ðŸ”</div>
+          <p class="loading-text">Scoring opportunities...</p>
+          <div class="loading-steps">
+            <div class="loading-step" id="loadStep1"><div class="step-check">âœ“</div><span>Scanning affiliate networks</span></div>
+            <div class="loading-step" id="loadStep2"><div class="step-check">âœ“</div><span>Scoring by payout & speed-to-cash</span></div>
+            <div class="loading-step" id="loadStep3"><div class="step-check">âœ“</div><span>Matching to your channels</span></div>
+            <div class="loading-step" id="loadStep4"><div class="step-check">âœ“</div><span>Building your 48-hour sprint</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Results Stage -->
+    <div class="stage" id="resultsStage">
+      <!-- Score Card -->
+      <div class="score-card">
+        <div class="score-label">Your Opportunity Score</div>
+        <div class="score-value" id="totalScore">87</div>
+        <div class="score-breakdown">
+          <div class="score-factor">
+            <div class="factor-value" id="speedScore">92</div>
+            <div class="factor-label">Speed</div>
+          </div>
+          <div class="score-factor">
+            <div class="factor-value" id="valueScore">85</div>
+            <div class="factor-label">Value</div>
+          </div>
+          <div class="score-factor">
+            <div class="factor-value" id="conversionScore">88</div>
+            <div class="factor-label">Conversion</div>
+          </div>
+          <div class="score-factor">
+            <div class="factor-value" id="frictionScore">83</div>
+            <div class="factor-label">Low Friction</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Top Opportunity -->
+      <div class="opportunity-card featured" id="topOpportunity"></div>
+      
+      <!-- Recommended Programs -->
+      <div class="programs-card" id="programsCard">
+        <div class="sprint-title">ðŸŽ¯ Recommended Programs</div>
+        <table class="programs-table" id="programsTable"></table>
+      </div>
+      
+      <!-- 48-Hour Sprint -->
+      <div class="sprint-card" id="sprintPlan">
+        <div class="sprint-title">âš¡ Your 48-Hour Sprint Plan</div>
+        <div id="sprintContent"></div>
+      </div>
+      
+      <!-- Kill/Scale Rules -->
+      <div class="rules-card">
+        <div class="sprint-title">ðŸ“ Kill/Scale Rules</div>
+        <div class="rules-grid">
+          <div class="rule-section kill">
+            <h4>ðŸ›‘ Kill If:</h4>
+            <ul class="rule-list" id="killRules"></ul>
+          </div>
+          <div class="rule-section scale">
+            <h4>ðŸš€ Scale If:</h4>
+            <ul class="rule-list" id="scaleRules"></ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Other Opportunities -->
+      <div id="otherOpportunities"></div>
+      
+      <!-- Share Card -->
+      <div class="share-card">
+        <h3>ðŸ”“ Share to Unlock Full Playbook</h3>
+        <p>Get detailed tutorials, asset templates, and tracking setup guides!</p>
+        <div class="share-buttons">
+          <button class="share-btn twitter" onclick="shareTwitter()">ð• Share Score</button>
+          <button class="share-btn linkedin" onclick="shareLinkedIn()">ðŸ’¼ LinkedIn</button>
+          <button class="share-btn copy" onclick="copyShareLink()">ðŸ”— Copy Link</button>
+        </div>
+      </div>
+      
+      <!-- Referral Card -->
+      <div class="referral-card">
+        <h3>ðŸŽ Give 3, Get Pro Free</h3>
+        <p>Help 3 friends find their affiliate opportunity and unlock all features!</p>
+        <div class="referral-progress">
+          <div class="referral-dot" id="ref1">1</div>
+          <div class="referral-dot" id="ref2">2</div>
+          <div class="referral-dot" id="ref3">3</div>
+        </div>
+        <div class="referral-link-box">
+          <input type="text" id="referralLink" readonly>
+          <button onclick="copyReferralLink()">Copy</button>
+        </div>
+      </div>
+      
+      <!-- CTA -->
+      <div class="cta-section">
+        <h3>ðŸš€ Unlock Full Market Maven</h3>
+        <p>Get unlimited scoring, full playbooks, and weekly opportunity alerts</p>
+        <div class="cta-features">
+          <div class="cta-feature">Unlimited program scoring</div>
+          <div class="cta-feature">Complete playbooks</div>
+          <div class="cta-feature">Asset templates</div>
+          <div class="cta-feature">Weekly hot opportunities</div>
+          <div class="cta-feature">Tracking setup guides</div>
+          <div class="cta-feature">Private community</div>
+        </div>
+        <button class="btn btn-primary" style="width: 100%" onclick="showUpgradeModal()">
+          Start 7-Day Free Trial â€” $9.99/mo
+        </button>
+      </div>
+      
+      <button class="btn btn-secondary" style="width: 100%; margin-top: var(--space-md);" onclick="resetQuiz()">
+        ðŸ”„ Score Another Niche
+      </button>
+      
+      <div class="footer">
+        Made with ðŸ’œ by <a href="https://dubltap.io">dubltap.io</a><br>
+        <small>Revenue is the only north star.</small>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Email Modal -->
+  <div class="modal-overlay" id="emailModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('emailModal')">Ã—</button>
+      <div class="modal-icon">ðŸ“Š</div>
+      <h2>Your Opportunities Are Ready!</h2>
+      <p class="subtitle">Enter your email to unlock your scored opportunities and sprint plan</p>
+      <div class="modal-benefits">
+        <ul>
+          <li>Top 3 affiliate opportunities scored</li>
+          <li>48-hour sprint action plan</li>
+          <li>Weekly high-payout alerts</li>
+        </ul>
+      </div>
+      <input type="email" class="modal-input" id="emailInput" placeholder="your@email.com">
+      <button class="btn btn-primary" style="width: 100%" onclick="submitEmail()">Unlock My Opportunities â†’</button>
+      <p class="modal-terms">By continuing, you agree to our <a href="#">Terms</a>. Unsubscribe anytime.</p>
+    </div>
+  </div>
+  
+  <!-- Upgrade Modal -->
+  <div class="modal-overlay" id="upgradeModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('upgradeModal')">Ã—</button>
+      <div class="modal-icon">ðŸ‘‘</div>
+      <h2>Unlock Market Maven Pro</h2>
+      <p class="subtitle">Everything you need to find and execute winning affiliate plays</p>
+      <div class="modal-benefits">
+        <ul>
+          <li>Unlimited opportunity scoring</li>
+          <li>Complete execution playbooks</li>
+          <li>Copy-paste asset templates</li>
+          <li>Weekly hot opportunity alerts</li>
+          <li>Tracking & automation guides</li>
+          <li>Private affiliate community</li>
+        </ul>
+      </div>
+      <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro()">
+        Start 7-Day Free Trial â€” $9.99/mo
+      </button>
+      <button class="btn btn-secondary" style="width: 100%" onclick="closeModal('upgradeModal')">Maybe Later</button>
+      <p class="modal-terms">Cancel anytime. 30-day money back guarantee.</p>
+    </div>
+  </div>
+  
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span id="toastIcon">âœ“</span>
+    <span id="toastText">Copied!</span>
+  </div>
+
+<script>
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// MARKET MAVEN - AFFILIATE OPPORTUNITY SCORER
+// "Revenue is the only north star"
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+const PHI = 1.618033988749895;
+
+const API_BASE = window.location.hostname === 'localhost'
+  ? 'http://localhost:3002/api'
+  : 'https://api.marketmaven.dubltap.io/api';
+
+// â•â• QUIZ DATA â•â•
+const QUESTIONS = [
+  {
+    id: 'experience',
+    question: "What's your affiliate marketing experience?",
+    options: [
+      { value: 'beginner', icon: 'ðŸŒ±', label: 'Just starting out', desc: 'Never earned affiliate commission' },
+      { value: 'intermediate', icon: 'ðŸ“ˆ', label: 'Some experience', desc: 'Earned < $1K in commissions' },
+      { value: 'advanced', icon: 'ðŸš€', label: 'Experienced', desc: 'Earned $1K+ in commissions' }
+    ]
+  },
+  {
+    id: 'channels',
+    question: "What's your strongest traffic channel?",
+    options: [
+      { value: 'seo', icon: 'ðŸ”', label: 'SEO / Blog Content', desc: 'Organic search traffic' },
+      { value: 'social', icon: 'ðŸ“±', label: 'Social Media', desc: 'TikTok, Instagram, X, YouTube' },
+      { value: 'email', icon: 'ðŸ“§', label: 'Email List', desc: 'Newsletter subscribers' },
+      { value: 'paid', icon: 'ðŸ’³', label: 'Paid Ads', desc: 'Facebook, Google, native ads' },
+      { value: 'none', icon: 'ðŸ†•', label: 'Starting from zero', desc: 'Building my first channel' }
+    ]
+  },
+  {
+    id: 'niche',
+    question: "Which niche interests you most?",
+    options: [
+      { value: 'saas', icon: 'ðŸ’»', label: 'Software / SaaS', desc: 'Tools, apps, subscriptions' },
+      { value: 'finance', icon: 'ðŸ’°', label: 'Finance / Investing', desc: 'Trading, banking, crypto' },
+      { value: 'health', icon: 'ðŸ’ª', label: 'Health / Fitness', desc: 'Supplements, programs, gear' },
+      { value: 'education', icon: 'ðŸ“š', label: 'Education / Courses', desc: 'Online learning, coaching' },
+      { value: 'ecommerce', icon: 'ðŸ›’', label: 'E-commerce / Products', desc: 'Physical products, dropship' }
+    ]
+  },
+  {
+    id: 'budget',
+    question: "What's your monthly budget for testing?",
+    options: [
+      { value: '0', icon: 'ðŸ†“', label: '$0 â€” Organic only', desc: 'Time investment, no ad spend' },
+      { value: '100', icon: 'ðŸ’µ', label: 'Under $100', desc: 'Small tests' },
+      { value: '500', icon: 'ðŸ’°', label: '$100 - $500', desc: 'Moderate testing budget' },
+      { value: '1000', icon: 'ðŸ’Ž', label: '$500+', desc: 'Ready to scale fast' }
+    ]
+  },
+  {
+    id: 'goal',
+    question: "What's your monthly commission goal?",
+    options: [
+      { value: '500', icon: 'ðŸŽ¯', label: '$500/month', desc: 'Side income' },
+      { value: '2000', icon: 'ðŸ”¥', label: '$2,000/month', desc: 'Meaningful income' },
+      { value: '5000', icon: 'ðŸš€', label: '$5,000/month', desc: 'Full-time income' },
+      { value: '10000', icon: 'ðŸ’Ž', label: '$10,000+/month', desc: 'Scaling big' }
+    ]
+  }
+];
+
+// â•â• OPPORTUNITIES DATABASE â•â•
+const OPPORTUNITIES = {
+  saas: [
+    {
+      id: 'ai-tools',
+      name: 'AI Writing Tools',
+      icon: 'ðŸ¤–',
+      subtitle: 'Promote AI copywriting and content tools',
+      programs: [
+        { name: 'Jasper', commission: '30% recurring', cookie: '30 days', payout: '$50', approval: 'Easy' },
+        { name: 'Copy.ai', commission: '45% first year', cookie: '60 days', payout: '$100', approval: 'Easy' },
+        { name: 'Writesonic', commission: '30% recurring', cookie: '30 days', payout: '$50', approval: 'Easy' }
+      ],
+      income: { min: 500, max: 10000 },
+      speedDays: 14,
+      tags: ['ðŸ”¥ Hot 2025', 'Recurring', 'High EPC'],
+      sprint: {
+        day1: [
+          'Sign up for top 2 programs (Jasper + Copy.ai)',
+          'Create comparison article outline: "Best AI Writing Tools 2025"',
+          'Draft 1,500-word review of your top pick',
+          'Set up tracking links with UTM parameters'
+        ],
+        day2: [
+          'Publish comparison article with affiliate links',
+          'Create 3 social posts highlighting key benefits',
+          'Share in 2-3 relevant communities (Reddit, Facebook groups)',
+          'Set up email welcome sequence with tool recommendation'
+        ]
+      },
+      killRules: ['< 50 clicks after 7 days', 'CTR < 1% on content', '0 trials after 100 clicks'],
+      scaleRules: ['EPC > $1', 'Trial-to-paid > 20%', 'Content ranking page 1']
+    },
+    {
+      id: 'hosting',
+      name: 'Web Hosting & Domains',
+      icon: 'ðŸŒ',
+      subtitle: 'Evergreen hosting and domain affiliate programs',
+      programs: [
+        { name: 'Bluehost', commission: '$65-130/sale', cookie: '90 days', payout: '$100', approval: 'Easy' },
+        { name: 'Hostinger', commission: '60% commission', cookie: '30 days', payout: '$50', approval: 'Easy' },
+        { name: 'Cloudways', commission: '$50-125/sale', cookie: '90 days', payout: '$250', approval: 'Medium' }
+      ],
+      income: { min: 300, max: 5000 },
+      speedDays: 21,
+      tags: ['Evergreen', 'High Commission', 'Long Cookie'],
+      sprint: {
+        day1: [
+          'Apply to Bluehost and Hostinger programs',
+          'Create "How to Start a Website" tutorial outline',
+          'Draft step-by-step hosting setup guide',
+          'Prepare screenshot walkthrough'
+        ],
+        day2: [
+          'Publish hosting tutorial with embedded affiliate links',
+          'Create YouTube short or TikTok showing website setup',
+          'Optimize for "best web hosting" keywords',
+          'Set up retargeting pixel for future campaigns'
+        ]
+      },
+      killRules: ['< 30 clicks in 14 days', 'Bounce rate > 80%', 'No conversions in 21 days'],
+      scaleRules: ['EPC > $3', 'Conversion rate > 3%', 'Ranking for target keywords']
+    }
+  ],
+  finance: [
+    {
+      id: 'trading',
+      name: 'Trading Platforms & Tools',
+      icon: 'ðŸ“ˆ',
+      subtitle: 'Promote trading apps, brokers, and analysis tools',
+      programs: [
+        { name: 'Robinhood', commission: '$20-75/signup', cookie: '30 days', payout: '$100', approval: 'Medium' },
+        { name: 'TradingView', commission: '30% recurring', cookie: '30 days', payout: '$50', approval: 'Easy' },
+        { name: 'Webull', commission: 'Up to $250/funded', cookie: '30 days', payout: '$500', approval: 'Medium' }
+      ],
+      income: { min: 1000, max: 15000 },
+      speedDays: 21,
+      tags: ['High Payout', 'Recurring', 'Competitive'],
+      sprint: {
+        day1: [
+          'Apply to TradingView (easiest approval)',
+          'Create "Best Trading Tools for Beginners" content plan',
+          'Draft TradingView walkthrough with tips',
+          'Set up YouTube/TikTok for demo content'
+        ],
+        day2: [
+          'Publish TradingView tutorial',
+          'Create comparison graphic for social',
+          'Post in trading communities with value-first approach',
+          'Start email capture with free trading checklist'
+        ]
+      },
+      killRules: ['< 20 signups after 100 clicks', 'CPA > $20 on paid', 'Content not ranking in 30 days'],
+      scaleRules: ['EPC > $5', 'Funded account rate > 30%', 'Email list growing > 50/week']
+    }
+  ],
+  health: [
+    {
+      id: 'supplements',
+      name: 'Health Supplements',
+      icon: 'ðŸ’Š',
+      subtitle: 'Promote vitamins, protein, and wellness supplements',
+      programs: [
+        { name: 'Athletic Greens', commission: '$20-50/sale', cookie: '45 days', payout: '$100', approval: 'Medium' },
+        { name: 'Thrive Market', commission: '$10-40/signup', cookie: '14 days', payout: '$100', approval: 'Easy' },
+        { name: 'iHerb', commission: '5-10%', cookie: '30 days', payout: '$50', approval: 'Easy' }
+      ],
+      income: { min: 500, max: 8000 },
+      speedDays: 14,
+      tags: ['High Volume', 'Influencer Friendly', 'Recurring'],
+      sprint: {
+        day1: [
+          'Apply to Athletic Greens and iHerb',
+          'Plan "Morning Routine" content featuring products',
+          'Draft honest review with personal experience',
+          'Set up Instagram/TikTok content schedule'
+        ],
+        day2: [
+          'Film and post first review content',
+          'Create Pinterest pins for supplement guides',
+          'Engage in health/fitness communities',
+          'Set up link-in-bio with tracking'
+        ]
+      },
+      killRules: ['< 10 sales in first month', 'Refund rate > 15%', 'CTR < 2% on social'],
+      scaleRules: ['Repeat customer rate > 20%', 'Content going viral', 'AOV > $75']
+    }
+  ],
+  education: [
+    {
+      id: 'online-courses',
+      name: 'Online Course Platforms',
+      icon: 'ðŸŽ“',
+      subtitle: 'Promote learning platforms and course creators',
+      programs: [
+        { name: 'Skillshare', commission: '$10/trial', cookie: '30 days', payout: '$50', approval: 'Easy' },
+        { name: 'Coursera', commission: '15-45%', cookie: '30 days', payout: '$50', approval: 'Easy' },
+        { name: 'Udemy', commission: '10-15%', cookie: '7 days', payout: '$50', approval: 'Easy' }
+      ],
+      income: { min: 300, max: 5000 },
+      speedDays: 7,
+      tags: ['Fast Approval', 'Easy Entry', 'Volume Play'],
+      sprint: {
+        day1: [
+          'Join Skillshare and Coursera programs (same day approval)',
+          'Create "Best Online Courses for [Skill]" listicle',
+          'Draft email pitch for newsletter promos',
+          'Set up YouTube tutorial content'
+        ],
+        day2: [
+          'Publish course recommendation content',
+          'Share "learning journey" on social with links',
+          'Create free resource as email lead magnet',
+          'Reach out to student communities'
+        ]
+      },
+      killRules: ['< 5 trials in first week', 'Trial-to-paid < 10%', 'Content CTR < 1%'],
+      scaleRules: ['> 20 trials/week', 'Featured by platform', 'Email list > 500']
+    }
+  ],
+  ecommerce: [
+    {
+      id: 'amazon',
+      name: 'Amazon Associates',
+      icon: 'ðŸ“¦',
+      subtitle: 'Promote physical products across categories',
+      programs: [
+        { name: 'Amazon Associates', commission: '1-10%', cookie: '24 hours', payout: '$10', approval: 'Easy' }
+      ],
+      income: { min: 200, max: 3000 },
+      speedDays: 7,
+      tags: ['Trusted Brand', 'Massive Selection', 'Low Commission'],
+      sprint: {
+        day1: [
+          'Sign up for Amazon Associates',
+          'Pick 3-5 products in your niche to review',
+          'Create "Best [Product] 2025" comparison',
+          'Set up SiteStripe for easy linking'
+        ],
+        day2: [
+          'Publish product roundup with affiliate links',
+          'Create unboxing/review video content',
+          'Optimize for buyer-intent keywords',
+          'Set up price tracking for deal alerts'
+        ]
+      },
+      killRules: ['< 100 clicks in 14 days', 'Conversion rate < 2%', 'Average order < $50'],
+      scaleRules: ['> 500 clicks/week', 'Conversion > 5%', 'Bounty items converting']
+    }
+  ]
+};
+
+// â•â• STATE â•â•
+let state = {
+  currentQuestion: 0,
+  answers: {},
+  result: null,
+  email: localStorage.getItem('userEmail') || null,
+  visitorId: localStorage.getItem('visitorId') || generateVisitorId(),
+  referralCount: parseInt(localStorage.getItem('referralCount') || '0')
+};
+
+function generateVisitorId() {
+  const id = 'mm_' + Math.random().toString(36).substr(2, 9);
+  localStorage.setItem('visitorId', id);
+  return id;
+}
+
+const $ = id => document.getElementById(id);
+
+// â•â• INIT â•â•
+function init() {
+  renderQuestion();
+  updateLiveCount();
+  updateReferralUI();
+  checkReferral();
+}
+
+function updateLiveCount() {
+  const base = 847;
+  const hour = new Date().getHours();
+  const variation = Math.floor(Math.random() * 30) + (hour * 3);
+  $('liveCount').textContent = (base + variation).toLocaleString();
+}
+
+function checkReferral() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const ref = urlParams.get('ref');
+  if (ref && ref !== state.visitorId) {
+    localStorage.setItem('referredBy', ref);
+  }
+}
+
+function updateReferralUI() {
+  for (let i = 1; i <= 3; i++) {
+    const dot = $(`ref${i}`);
+    if (dot && state.referralCount >= i) {
+      dot.classList.add('filled');
+      dot.textContent = 'âœ“';
+    }
+  }
+  const refLink = $('referralLink');
+  if (refLink) {
+    refLink.value = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  }
+}
+
+// â•â• QUIZ â•â•
+function renderQuestion() {
+  const q = QUESTIONS[state.currentQuestion];
+  
+  $('progressBar').innerHTML = QUESTIONS.map((_, i) => {
+    let cls = 'progress-step';
+    if (i < state.currentQuestion) cls += ' completed';
+    else if (i === state.currentQuestion) cls += ' active';
+    return `<div class="${cls}"></div>`;
+  }).join('');
+  
+  $('questionNumber').textContent = `Question ${state.currentQuestion + 1} of ${QUESTIONS.length}`;
+  $('questionText').textContent = q.question;
+  
+  $('optionsGrid').innerHTML = q.options.map(opt => `
+    <button class="option-btn ${state.answers[q.id] === opt.value ? 'selected' : ''}" 
+            onclick="selectOption('${opt.value}')">
+      <span class="option-icon">${opt.icon}</span>
+      <div>
+        <div class="option-label">${opt.label}</div>
+        <div class="option-desc">${opt.desc}</div>
+      </div>
+    </button>
+  `).join('');
+  
+  $('backBtn').classList.toggle('hidden', state.currentQuestion === 0);
+  $('nextBtn').disabled = !state.answers[q.id];
+  $('nextBtn').textContent = state.currentQuestion === QUESTIONS.length - 1 ? 'Score My Opportunities â†’' : 'Continue â†’';
+}
+
+function selectOption(value) {
+  state.answers[QUESTIONS[state.currentQuestion].id] = value;
+  renderQuestion();
+}
+
+function nextQuestion() {
+  if (state.currentQuestion < QUESTIONS.length - 1) {
+    state.currentQuestion++;
+    renderQuestion();
+  } else {
+    generateResults();
+  }
+}
+
+function prevQuestion() {
+  if (state.currentQuestion > 0) {
+    state.currentQuestion--;
+    renderQuestion();
+  }
+}
+
+// â•â• RESULTS â•â•
+async function generateResults() {
+  showStage('loadingStage');
+  
+  const steps = ['loadStep1', 'loadStep2', 'loadStep3', 'loadStep4'];
+  for (let i = 0; i < steps.length; i++) {
+    await sleep(500);
+    $(steps[i]).classList.add('active');
+    if (i > 0) $(steps[i-1]).classList.remove('active');
+    $(steps[i]).classList.add('completed');
+  }
+  
+  await sleep(400);
+  
+  // Calculate matches
+  const opportunities = scoreOpportunities();
+  state.result = opportunities;
+  
+  // Show email modal
+  if (!state.email) {
+    showModal('emailModal');
+  }
+  
+  renderResults(opportunities);
+  showStage('resultsStage');
+}
+
+function scoreOpportunities() {
+  const { niche, channels, experience, budget, goal } = state.answers;
+  
+  const nicheOpps = OPPORTUNITIES[niche] || OPPORTUNITIES.saas;
+  
+  return nicheOpps.map(opp => {
+    let speedScore = Math.min(100, 100 - opp.speedDays * 2);
+    let valueScore = Math.min(100, 50 + (opp.income.max / 200));
+    let conversionScore = experience === 'advanced' ? 90 : experience === 'intermediate' ? 75 : 60;
+    let frictionScore = 80;
+    
+    // Channel bonus
+    if (channels === 'seo' && opp.tags.includes('Evergreen')) conversionScore += 10;
+    if (channels === 'social' && opp.tags.includes('Influencer Friendly')) conversionScore += 10;
+    if (channels === 'paid' && parseInt(budget) >= 500) valueScore += 10;
+    
+    const totalScore = Math.round(
+      speedScore * 0.35 +
+      valueScore * 0.35 +
+      conversionScore * 0.2 +
+      frictionScore * 0.1
+    );
+    
+    return {
+      ...opp,
+      scores: {
+        total: Math.min(99, totalScore),
+        speed: Math.min(99, speedScore),
+        value: Math.min(99, valueScore),
+        conversion: Math.min(99, conversionScore),
+        friction: Math.min(99, frictionScore)
+      }
+    };
+  }).sort((a, b) => b.scores.total - a.scores.total);
+}
+
+function renderResults(opportunities) {
+  const top = opportunities[0];
+  
+  // Score card
+  $('totalScore').textContent = top.scores.total;
+  $('speedScore').textContent = top.scores.speed;
+  $('valueScore').textContent = top.scores.value;
+  $('conversionScore').textContent = top.scores.conversion;
+  $('frictionScore').textContent = top.scores.friction;
+  
+  // Top opportunity
+  $('topOpportunity').innerHTML = `
+    <div class="opp-header">
+      <div class="opp-icon">${top.icon}</div>
+      <div>
+        <div class="opp-title">${top.name}</div>
+        <div class="opp-subtitle">${top.subtitle}</div>
+      </div>
+    </div>
+    <div class="opp-stats">
+      <div class="stat-item">
+        <div class="stat-value">$${top.income.min}-${top.income.max >= 10000 ? '10K+' : top.income.max}</div>
+        <div class="stat-label">Monthly Potential</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${top.speedDays} days</div>
+        <div class="stat-label">To First Sale</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${top.scores.total}/100</div>
+        <div class="stat-label">Match Score</div>
+      </div>
+    </div>
+    <div class="opp-tags">
+      ${top.tags.map(t => `<span class="tag ${t.includes('Hot') ? 'hot' : t.includes('Easy') ? 'easy' : ''}">${t}</span>`).join('')}
+    </div>
+  `;
+  
+  // Programs table
+  $('programsTable').innerHTML = `
+    <thead>
+      <tr><th>Program</th><th>Commission</th><th>Cookie</th><th>Payout</th></tr>
+    </thead>
+    <tbody>
+      ${top.programs.map(p => `
+        <tr>
+          <td class="program-name">${p.name}</td>
+          <td><span class="commission-badge">${p.commission}</span></td>
+          <td>${p.cookie}</td>
+          <td>${p.payout}</td>
+        </tr>
+      `).join('')}
+    </tbody>
+  `;
+  
+  // Sprint plan
+  $('sprintContent').innerHTML = `
+    <div class="sprint-day">
+      <div class="day-header">ðŸ“… Day 1 â€” Setup & Create</div>
+      <div class="day-tasks">
+        ${top.sprint.day1.map(t => `<div class="task-item"><div class="task-check"></div><span>${t}</span></div>`).join('')}
+      </div>
+    </div>
+    <div class="sprint-day">
+      <div class="day-header">ðŸ“… Day 2 â€” Launch & Distribute</div>
+      <div class="day-tasks">
+        ${top.sprint.day2.map(t => `<div class="task-item"><div class="task-check"></div><span>${t}</span></div>`).join('')}
+      </div>
+    </div>
+  `;
+  
+  // Kill/Scale rules
+  $('killRules').innerHTML = top.killRules.map(r => `<li>${r}</li>`).join('');
+  $('scaleRules').innerHTML = top.scaleRules.map(r => `<li>${r}</li>`).join('');
+  
+  // Other opportunities
+  if (opportunities.length > 1) {
+    $('otherOpportunities').innerHTML = opportunities.slice(1).map(opp => `
+      <div class="opportunity-card">
+        <div class="opp-header">
+          <div class="opp-icon">${opp.icon}</div>
+          <div>
+            <div class="opp-title">${opp.name}</div>
+            <div class="opp-subtitle">${opp.subtitle}</div>
+          </div>
+        </div>
+        <div class="opp-stats">
+          <div class="stat-item">
+            <div class="stat-value">$${opp.income.min}-${opp.income.max}</div>
+            <div class="stat-label">Monthly</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">${opp.speedDays}d</div>
+            <div class="stat-label">Speed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">${opp.scores.total}/100</div>
+            <div class="stat-label">Score</div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+}
+
+// â•â• SHARING â•â•
+function shareTwitter() {
+  const score = state.result[0].scores.total;
+  const opp = state.result[0].name;
+  const text = `I just scored ${score}/100 on my affiliate opportunity match! ðŸ“Š\n\nTop match: ${opp}\n\nFind yours free ðŸ‘‡\nhttps://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
+  trackEvent('share', { platform: 'twitter' });
+}
+
+function shareLinkedIn() {
+  const url = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
+  trackEvent('share', { platform: 'linkedin' });
+}
+
+function copyShareLink() {
+  navigator.clipboard?.writeText(`https://marketmaven.dubltap.io/?ref=${state.visitorId}`);
+  showToast('Link copied!');
+  trackEvent('share', { platform: 'copy' });
+}
+
+function copyReferralLink() {
+  navigator.clipboard?.writeText($('referralLink').value);
+  showToast('Referral link copied!');
+}
+
+// â•â• EMAIL â•â•
+async function submitEmail() {
+  const email = $('emailInput').value.trim();
+  if (!email || !email.includes('@')) {
+    $('emailInput').style.borderColor = '#f87171';
+    return;
+  }
+  
+  state.email = email;
+  localStorage.setItem('userEmail', email);
+  
+  try {
+    await fetch(`${API_BASE}/subscribe`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        visitorId: state.visitorId,
+        source: 'quiz_complete',
+        niche: state.answers.niche,
+        referredBy: localStorage.getItem('referredBy')
+      })
+    });
+  } catch {}
+  
+  closeModal('emailModal');
+  showToast('Welcome! Your opportunities are ready ðŸš€');
+  trackEvent('email_signup');
+}
+
+function subscribePro() {
+  trackEvent('upgrade_click');
+  showToast('Opening checkout...');
+}
+
+function showUpgradeModal() {
+  showModal('upgradeModal');
+}
+
+// â•â• UTILITIES â•â•
+function showStage(stageId) {
+  document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
+  $(stageId).classList.add('active');
+}
+
+function showModal(modalId) { $(modalId).classList.add('active'); }
+function closeModal(modalId) { $(modalId).classList.remove('active'); }
+
+function showToast(message) {
+  $('toastText').textContent = message;
+  $('toast').classList.add('show');
+  setTimeout(() => $('toast').classList.remove('show'), 2618);
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function resetQuiz() {
+  state.currentQuestion = 0;
+  state.answers = {};
+  state.result = null;
+  showStage('quizStage');
+  renderQuestion();
+}
+
+function trackEvent(event, data = {}) {
+  fetch(`${API_BASE}/track`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ event, data, visitorId: state.visitorId })
+  }).catch(() => {});
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

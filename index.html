@@ -7,7 +7,7 @@
   <meta name="description" content="AI-powered affiliate opportunity finder. Discover your highest-converting programs, get a 48-hour sprint plan, and start earning commissions fast.">
   <meta property="og:title" content="Market Maven - Find Your Best Affiliate Opportunity">
   <meta property="og:description" content="I just scored 94/100 on my affiliate match! Find your highest-converting programs free.">
-  <meta property="og:image" content="https://marketmaven.dubltap.io/og-image.png">
+  <meta property="og:image" content="https://maven.dubltap.io/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +15,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     /*
-     * â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     * 
      * MARKET MAVEN - GOLDEN RATIO DESIGN SYSTEM
-     * Ï† (Phi) = 1.618033988749895
+     * phi (Phi) = 1.618033988749895
      * 
      * "Revenue is the only north star"
-     * â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     * 
      */
     
     :root {
-      /* â•â• GOLDEN CONSTANTS â•â• */
+      /*  GOLDEN CONSTANTS  */
       --phi: 1.618033988749895;
       --phi-inv: 0.618033988749895;
       
-      /* â•â• GOLDEN TYPOGRAPHY â•â• */
+      /*  GOLDEN TYPOGRAPHY  */
       --text-xs: 10px;
       --text-sm: 13px;
       --text-base: 16px;
@@ -39,7 +39,7 @@
       --text-4xl: 55px;
       --text-5xl: 68px;
       
-      /* â•â• FIBONACCI SPACING â•â• */
+      /*  FIBONACCI SPACING  */
       --space-3xs: 3px;
       --space-2xs: 5px;
       --space-xs: 8px;
@@ -49,17 +49,17 @@
       --space-xl: 55px;
       --space-2xl: 89px;
       
-      /* â•â• GOLDEN TIMING â•â• */
+      /*  GOLDEN TIMING  */
       --duration-fast: 162ms;
       --duration-base: 262ms;
       --duration-slow: 424ms;
       
-      /* â•â• GOLDEN EASING â•â• */
+      /*  GOLDEN EASING  */
       --ease-golden: cubic-bezier(0.382, 0, 0.618, 1);
       --ease-golden-out: cubic-bezier(0, 0.618, 0.382, 1);
       --ease-golden-bounce: cubic-bezier(0.382, 1.618, 0.618, 1);
       
-      /* â•â• MONEY PURPLE/BLUE THEME â•â• */
+      /*  MONEY PURPLE/BLUE THEME  */
       --bg-dark: #09090f;
       --bg-card: #12121a;
       --bg-elevated: #1a1a25;
@@ -78,19 +78,19 @@
       --text-secondary: #cbd5e1;
       --text-muted: #94a3b8;
       
-      /* â•â• GRADIENTS â•â• */
+      /*  GRADIENTS  */
       --gradient-brand: linear-gradient(137.5deg, var(--purple-500), var(--blue-500));
       --gradient-money: linear-gradient(137.5deg, var(--purple-400), var(--cyan-400));
       --gradient-gold: linear-gradient(137.5deg, var(--gold-400), #f59e0b);
       --gradient-glow: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15), transparent 70%);
       
-      /* â•â• SHADOWS â•â• */
+      /*  SHADOWS  */
       --shadow-sm: 0 2px 5px rgba(0,0,0,0.3);
       --shadow-md: 0 5px 13px rgba(0,0,0,0.35);
       --shadow-lg: 0 13px 34px rgba(0,0,0,0.4);
       --shadow-glow: 0 0 34px rgba(139, 92, 246, 0.25);
       
-      /* â•â• RADIUS â•â• */
+      /*  RADIUS  */
       --radius-sm: 5px;
       --radius-md: 8px;
       --radius-lg: 13px;
@@ -120,7 +120,7 @@
       z-index: 1;
     }
     
-    /* â•â• ANIMATED BACKGROUND â•â• */
+    /*  ANIMATED BACKGROUND  */
     .bg-effects {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -156,7 +156,7 @@
       background-size: 55px 55px;
     }
     
-    /* â•â• ANNOUNCEMENT BAR â•â• */
+    /*  ANNOUNCEMENT BAR  */
     .announcement-bar {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -172,7 +172,7 @@
     
     body.has-announcement { padding-top: 42px; }
     
-    /* â•â• HEADER â•â• */
+    /*  HEADER  */
     header {
       text-align: center;
       margin-bottom: var(--space-xl);
@@ -219,7 +219,7 @@
       color: var(--text-secondary);
     }
     
-    /* â•â• SOCIAL PROOF â•â• */
+    /*  SOCIAL PROOF  */
     .social-proof {
       display: flex;
       align-items: center;
@@ -242,11 +242,11 @@
       color: var(--purple-400);
     }
     
-    /* â•â• STAGES â•â• */
+    /*  STAGES  */
     .stage { display: none; animation: fadeUp var(--duration-slow) var(--ease-golden-out); }
     .stage.active { display: block; }
     
-    /* â•â• QUIZ CARD â•â• */
+    /*  QUIZ CARD  */
     .quiz-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.15);
@@ -265,7 +265,7 @@
       background: var(--gradient-brand);
     }
     
-    /* â•â• PROGRESS BAR â•â• */
+    /*  PROGRESS BAR  */
     .progress-bar {
       display: flex;
       gap: var(--space-xs);
@@ -294,7 +294,7 @@
       margin-bottom: var(--space-lg);
     }
     
-    /* â•â• OPTIONS â•â• */
+    /*  OPTIONS  */
     .options-grid {
       display: grid;
       gap: var(--space-sm);
@@ -330,7 +330,7 @@
     .option-label { font-weight: 500; }
     .option-desc { font-size: var(--text-sm); color: var(--text-muted); margin-top: 2px; }
     
-    /* â•â• NAV BUTTONS â•â• */
+    /*  NAV BUTTONS  */
     .nav-row {
       display: flex;
       gap: var(--space-sm);
@@ -371,7 +371,7 @@
       border: 2px solid rgba(255,255,255,0.15);
     }
     
-    /* â•â• LOADING â•â• */
+    /*  LOADING  */
     .loading-container {
       text-align: center;
       padding: var(--space-2xl) 0;
@@ -432,7 +432,7 @@
       border-color: var(--purple-500);
     }
     
-    /* â•â• RESULTS â•â• */
+    /*  RESULTS  */
     .results-header {
       text-align: center;
       margin-bottom: var(--space-xl);
@@ -444,7 +444,7 @@
       margin-bottom: var(--space-sm);
     }
     
-    /* â•â• SCORE CARD â•â• */
+    /*  SCORE CARD  */
     .score-card {
       background: var(--bg-card);
       border: 2px solid var(--purple-500);
@@ -507,7 +507,7 @@
       margin-top: 2px;
     }
     
-    /* â•â• OPPORTUNITY CARD â•â• */
+    /*  OPPORTUNITY CARD  */
     .opportunity-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.15);
@@ -528,7 +528,7 @@
     }
     
     .opportunity-card.featured::before {
-      content: 'ðŸ† TOP MATCH';
+      content: '🏆 TOP MATCH';
       position: absolute;
       top: var(--space-sm);
       right: var(--space-sm);
@@ -610,7 +610,7 @@
     .tag.hot { background: rgba(251,191,36,0.15); color: var(--gold-400); }
     .tag.easy { background: rgba(74,222,128,0.15); color: var(--green-400); }
     
-    /* â•â• SPRINT PLAN â•â• */
+    /*  SPRINT PLAN  */
     .sprint-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -667,7 +667,7 @@
       margin-top: 2px;
     }
     
-    /* â•â• PROGRAM TABLE â•â• */
+    /*  PROGRAM TABLE  */
     .programs-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -713,7 +713,7 @@
       font-weight: 600;
     }
     
-    /* â•â• SHARE CARD â•â• */
+    /*  SHARE CARD  */
     .share-card {
       background: linear-gradient(137.5deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15));
       border: 2px solid var(--purple-500);
@@ -760,7 +760,7 @@
     .share-btn.linkedin { background: #0a66c2; color: white; }
     .share-btn.copy { background: white; color: #000; }
     
-    /* â•â• REFERRAL CARD â•â• */
+    /*  REFERRAL CARD  */
     .referral-card {
       background: linear-gradient(137.5deg, #fef3c7, #fde68a);
       border-radius: var(--radius-2xl);
@@ -819,7 +819,7 @@
       cursor: pointer;
     }
     
-    /* â•â• CTA SECTION â•â• */
+    /*  CTA SECTION  */
     .cta-section {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -853,7 +853,7 @@
       font-weight: bold;
     }
     
-    /* â•â• KILL/SCALE RULES â•â• */
+    /*  KILL/SCALE RULES  */
     .rules-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -893,9 +893,9 @@
       gap: var(--space-xs);
     }
     
-    .rule-list li::before { content: 'â€¢'; color: var(--text-muted); }
+    .rule-list li::before { content: '"¢'; color: var(--text-muted); }
     
-    /* â•â• MODALS â•â• */
+    /*  MODALS  */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -965,7 +965,7 @@
     .modal-terms { text-align: center; font-size: var(--text-xs); color: var(--text-muted); margin-top: var(--space-md); }
     .modal-terms a { color: var(--purple-400); }
     
-    /* â•â• TOAST â•â• */
+    /*  TOAST  */
     .toast {
       position: fixed;
       bottom: var(--space-lg);
@@ -986,7 +986,7 @@
     
     .toast.show { transform: translateX(-50%) translateY(0); }
     
-    /* â•â• FOOTER â•â• */
+    /*  FOOTER  */
     .footer {
       text-align: center;
       padding: var(--space-lg) 0;
@@ -1009,7 +1009,7 @@
 <body class="has-announcement">
   <!-- Announcement Bar -->
   <div class="announcement-bar" onclick="showUpgradeModal()">
-    ðŸ”¥ <span id="liveCount">847</span> affiliates scored today â€” <strong>Find your highest-payout opportunity â†’</strong>
+    🔥 <span id="liveCount">847</span> affiliates scored today "” <strong>Find your highest-payout opportunity ->’</strong>
   </div>
   
   <!-- Background -->
@@ -1023,18 +1023,18 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <span class="logo-icon">ðŸ“Š</span>
+        <span class="logo-icon">📊</span>
         Market Maven
       </div>
       <h1>Find <span class="highlight">High-Payout</span> Affiliate Wins Fast</h1>
-      <p class="subtitle">60-second quiz â†’ Scored opportunities â†’ 48-hour sprint plan</p>
+      <p class="subtitle">60-second quiz ->’ Scored opportunities ->’ 48-hour sprint plan</p>
       
       <div class="social-proof">
         <div class="proof-item">
-          ðŸ’° <span class="proof-number" id="totalEarned">$2.4M</span> tracked commissions
+          💰 <span class="proof-number" id="totalEarned">$2.4M</span> tracked commissions
         </div>
         <div class="proof-item">
-          âš¡ <span class="proof-number">14 days</span> avg. first sale
+           <span class="proof-number">14 days</span> avg. first sale
         </div>
       </div>
     </header>
@@ -1047,8 +1047,8 @@
         <div class="question-text" id="questionText"></div>
         <div class="options-grid" id="optionsGrid"></div>
         <div class="nav-row">
-          <button class="btn btn-secondary hidden" id="backBtn" onclick="prevQuestion()">â† Back</button>
-          <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Continue â†’</button>
+          <button class="btn btn-secondary hidden" id="backBtn" onclick="prevQuestion()">-> Back</button>
+          <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Continue ->’</button>
         </div>
       </div>
     </div>
@@ -1057,7 +1057,7 @@
     <div class="stage" id="loadingStage">
       <div class="quiz-card">
         <div class="loading-container">
-          <div class="loading-icon">ðŸ”</div>
+          <div class="loading-icon">🔍</div>
           <p class="loading-text">Scoring opportunities...</p>
           <div class="loading-steps">
             <div class="loading-step" id="loadStep1"><div class="step-check">âœ“</div><span>Scanning affiliate networks</span></div>
@@ -1100,26 +1100,26 @@
       
       <!-- Recommended Programs -->
       <div class="programs-card" id="programsCard">
-        <div class="sprint-title">ðŸŽ¯ Recommended Programs</div>
+        <div class="sprint-title">🎯 Recommended Programs</div>
         <table class="programs-table" id="programsTable"></table>
       </div>
       
       <!-- 48-Hour Sprint -->
       <div class="sprint-card" id="sprintPlan">
-        <div class="sprint-title">âš¡ Your 48-Hour Sprint Plan</div>
+        <div class="sprint-title"> Your 48-Hour Sprint Plan</div>
         <div id="sprintContent"></div>
       </div>
       
       <!-- Kill/Scale Rules -->
       <div class="rules-card">
-        <div class="sprint-title">ðŸ“ Kill/Scale Rules</div>
+        <div class="sprint-title">📋 Kill/Scale Rules</div>
         <div class="rules-grid">
           <div class="rule-section kill">
-            <h4>ðŸ›‘ Kill If:</h4>
+            <h4>🛑 Kill If:</h4>
             <ul class="rule-list" id="killRules"></ul>
           </div>
           <div class="rule-section scale">
-            <h4>ðŸš€ Scale If:</h4>
+            <h4>🚀 Scale If:</h4>
             <ul class="rule-list" id="scaleRules"></ul>
           </div>
         </div>
@@ -1130,18 +1130,18 @@
       
       <!-- Share Card -->
       <div class="share-card">
-        <h3>ðŸ”“ Share to Unlock Full Playbook</h3>
+        <h3>🔓 Share to Unlock Full Playbook</h3>
         <p>Get detailed tutorials, asset templates, and tracking setup guides!</p>
         <div class="share-buttons">
-          <button class="share-btn twitter" onclick="shareTwitter()">ð• Share Score</button>
-          <button class="share-btn linkedin" onclick="shareLinkedIn()">ðŸ’¼ LinkedIn</button>
-          <button class="share-btn copy" onclick="copyShareLink()">ðŸ”— Copy Link</button>
+          <button class="share-btn twitter" onclick="shareTwitter()">𝕏 Share Score</button>
+          <button class="share-btn linkedin" onclick="shareLinkedIn()">💼 LinkedIn</button>
+          <button class="share-btn copy" onclick="copyShareLink()">🔗 Copy Link</button>
         </div>
       </div>
       
       <!-- Referral Card -->
       <div class="referral-card">
-        <h3>ðŸŽ Give 3, Get Pro Free</h3>
+        <h3>🎁 Give 3, Get Pro Free</h3>
         <p>Help 3 friends find their affiliate opportunity and unlock all features!</p>
         <div class="referral-progress">
           <div class="referral-dot" id="ref1">1</div>
@@ -1156,7 +1156,7 @@
       
       <!-- CTA -->
       <div class="cta-section">
-        <h3>ðŸš€ Unlock Full Market Maven</h3>
+        <h3>🚀 Unlock Full Market Maven</h3>
         <p>Get unlimited scoring, full playbooks, and weekly opportunity alerts</p>
         <div class="cta-features">
           <div class="cta-feature">Unlimited program scoring</div>
@@ -1167,16 +1167,16 @@
           <div class="cta-feature">Private community</div>
         </div>
         <button class="btn btn-primary" style="width: 100%" onclick="showUpgradeModal()">
-          Start 7-Day Free Trial â€” $9.99/mo
+          Start 7-Day Free Trial "” $9.99/mo
         </button>
       </div>
       
       <button class="btn btn-secondary" style="width: 100%; margin-top: var(--space-md);" onclick="resetQuiz()">
-        ðŸ”„ Score Another Niche
+        🔄 Score Another Niche
       </button>
       
       <div class="footer">
-        Made with ðŸ’œ by <a href="https://dubltap.io">dubltap.io</a><br>
+        Made with 💜 by <a href="https://dubltap.io">dubltap.io</a><br>
         <small>Revenue is the only north star.</small>
       </div>
     </div>
@@ -1185,8 +1185,8 @@
   <!-- Email Modal -->
   <div class="modal-overlay" id="emailModal">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('emailModal')">Ã—</button>
-      <div class="modal-icon">ðŸ“Š</div>
+      <button class="modal-close" onclick="closeModal('emailModal')">×</button>
+      <div class="modal-icon">📊</div>
       <h2>Your Opportunities Are Ready!</h2>
       <p class="subtitle">Enter your email to unlock your scored opportunities and sprint plan</p>
       <div class="modal-benefits">
@@ -1197,7 +1197,7 @@
         </ul>
       </div>
       <input type="email" class="modal-input" id="emailInput" placeholder="your@email.com">
-      <button class="btn btn-primary" style="width: 100%" onclick="submitEmail()">Unlock My Opportunities â†’</button>
+      <button class="btn btn-primary" style="width: 100%" onclick="submitEmail()">Unlock My Opportunities ->’</button>
       <p class="modal-terms">By continuing, you agree to our <a href="#">Terms</a>. Unsubscribe anytime.</p>
     </div>
   </div>
@@ -1205,8 +1205,8 @@
   <!-- Upgrade Modal -->
   <div class="modal-overlay" id="upgradeModal">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('upgradeModal')">Ã—</button>
-      <div class="modal-icon">ðŸ‘‘</div>
+      <button class="modal-close" onclick="closeModal('upgradeModal')">×</button>
+      <div class="modal-icon">👑</div>
       <h2>Unlock Market Maven Pro</h2>
       <p class="subtitle">Everything you need to find and execute winning affiliate plays</p>
       <div class="modal-benefits">
@@ -1220,7 +1220,7 @@
         </ul>
       </div>
       <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro()">
-        Start 7-Day Free Trial â€” $9.99/mo
+        Start 7-Day Free Trial "” $9.99/mo
       </button>
       <button class="btn btn-secondary" style="width: 100%" onclick="closeModal('upgradeModal')">Maybe Later</button>
       <p class="modal-terms">Cancel anytime. 30-day money back guarantee.</p>
@@ -1234,79 +1234,79 @@
   </div>
 
 <script>
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// 
 // MARKET MAVEN - AFFILIATE OPPORTUNITY SCORER
 // "Revenue is the only north star"
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// 
 
 const PHI = 1.618033988749895;
 
-const API_BASE = window.location.hostname === 'localhost'
-  ? 'http://localhost:3002/api'
-  : 'https://api.marketmaven.dubltap.io/api';
+const API_BASE = 'https://api.dubltap.io'; // Updated
+  // Removed local API
+  // Using centralized API
 
-// â•â• QUIZ DATA â•â•
+//  QUIZ DATA 
 const QUESTIONS = [
   {
     id: 'experience',
     question: "What's your affiliate marketing experience?",
     options: [
-      { value: 'beginner', icon: 'ðŸŒ±', label: 'Just starting out', desc: 'Never earned affiliate commission' },
-      { value: 'intermediate', icon: 'ðŸ“ˆ', label: 'Some experience', desc: 'Earned < $1K in commissions' },
-      { value: 'advanced', icon: 'ðŸš€', label: 'Experienced', desc: 'Earned $1K+ in commissions' }
+      { value: 'beginner', icon: '🌱', label: 'Just starting out', desc: 'Never earned affiliate commission' },
+      { value: 'intermediate', icon: '📈', label: 'Some experience', desc: 'Earned < $1K in commissions' },
+      { value: 'advanced', icon: '🚀', label: 'Experienced', desc: 'Earned $1K+ in commissions' }
     ]
   },
   {
     id: 'channels',
     question: "What's your strongest traffic channel?",
     options: [
-      { value: 'seo', icon: 'ðŸ”', label: 'SEO / Blog Content', desc: 'Organic search traffic' },
-      { value: 'social', icon: 'ðŸ“±', label: 'Social Media', desc: 'TikTok, Instagram, X, YouTube' },
-      { value: 'email', icon: 'ðŸ“§', label: 'Email List', desc: 'Newsletter subscribers' },
-      { value: 'paid', icon: 'ðŸ’³', label: 'Paid Ads', desc: 'Facebook, Google, native ads' },
-      { value: 'none', icon: 'ðŸ†•', label: 'Starting from zero', desc: 'Building my first channel' }
+      { value: 'seo', icon: '🔍', label: 'SEO / Blog Content', desc: 'Organic search traffic' },
+      { value: 'social', icon: '📱', label: 'Social Media', desc: 'TikTok, Instagram, X, YouTube' },
+      { value: 'email', icon: '📧', label: 'Email List', desc: 'Newsletter subscribers' },
+      { value: 'paid', icon: '💳', label: 'Paid Ads', desc: 'Facebook, Google, native ads' },
+      { value: 'none', icon: '🆕', label: 'Starting from zero', desc: 'Building my first channel' }
     ]
   },
   {
     id: 'niche',
     question: "Which niche interests you most?",
     options: [
-      { value: 'saas', icon: 'ðŸ’»', label: 'Software / SaaS', desc: 'Tools, apps, subscriptions' },
-      { value: 'finance', icon: 'ðŸ’°', label: 'Finance / Investing', desc: 'Trading, banking, crypto' },
-      { value: 'health', icon: 'ðŸ’ª', label: 'Health / Fitness', desc: 'Supplements, programs, gear' },
-      { value: 'education', icon: 'ðŸ“š', label: 'Education / Courses', desc: 'Online learning, coaching' },
-      { value: 'ecommerce', icon: 'ðŸ›’', label: 'E-commerce / Products', desc: 'Physical products, dropship' }
+      { value: 'saas', icon: '💻', label: 'Software / SaaS', desc: 'Tools, apps, subscriptions' },
+      { value: 'finance', icon: '💰', label: 'Finance / Investing', desc: 'Trading, banking, crypto' },
+      { value: 'health', icon: '💪', label: 'Health / Fitness', desc: 'Supplements, programs, gear' },
+      { value: 'education', icon: '📚', label: 'Education / Courses', desc: 'Online learning, coaching' },
+      { value: 'ecommerce', icon: '🛒', label: 'E-commerce / Products', desc: 'Physical products, dropship' }
     ]
   },
   {
     id: 'budget',
     question: "What's your monthly budget for testing?",
     options: [
-      { value: '0', icon: 'ðŸ†“', label: '$0 â€” Organic only', desc: 'Time investment, no ad spend' },
-      { value: '100', icon: 'ðŸ’µ', label: 'Under $100', desc: 'Small tests' },
-      { value: '500', icon: 'ðŸ’°', label: '$100 - $500', desc: 'Moderate testing budget' },
-      { value: '1000', icon: 'ðŸ’Ž', label: '$500+', desc: 'Ready to scale fast' }
+      { value: '0', icon: '🆓', label: '$0 - Organic only', desc: 'Time investment, no ad spend' },
+      { value: '100', icon: '💵', label: 'Under $100', desc: 'Small tests' },
+      { value: '500', icon: '💰', label: '$100 - $500', desc: 'Moderate testing budget' },
+      { value: '1000', icon: '💎', label: '$500+', desc: 'Ready to scale fast' }
     ]
   },
   {
     id: 'goal',
     question: "What's your monthly commission goal?",
     options: [
-      { value: '500', icon: 'ðŸŽ¯', label: '$500/month', desc: 'Side income' },
-      { value: '2000', icon: 'ðŸ”¥', label: '$2,000/month', desc: 'Meaningful income' },
-      { value: '5000', icon: 'ðŸš€', label: '$5,000/month', desc: 'Full-time income' },
-      { value: '10000', icon: 'ðŸ’Ž', label: '$10,000+/month', desc: 'Scaling big' }
+      { value: '500', icon: '🎯', label: '$500/month', desc: 'Side income' },
+      { value: '2000', icon: '🔥', label: '$2,000/month', desc: 'Meaningful income' },
+      { value: '5000', icon: '🚀', label: '$5,000/month', desc: 'Full-time income' },
+      { value: '10000', icon: '💎', label: '$10,000+/month', desc: 'Scaling big' }
     ]
   }
 ];
 
-// â•â• OPPORTUNITIES DATABASE â•â•
+//  OPPORTUNITIES DATABASE 
 const OPPORTUNITIES = {
   saas: [
     {
       id: 'ai-tools',
       name: 'AI Writing Tools',
-      icon: 'ðŸ¤–',
+      icon: '🤖',
       subtitle: 'Promote AI copywriting and content tools',
       programs: [
         { name: 'Jasper', commission: '30% recurring', cookie: '30 days', payout: '$50', approval: 'Easy' },
@@ -1315,7 +1315,7 @@ const OPPORTUNITIES = {
       ],
       income: { min: 500, max: 10000 },
       speedDays: 14,
-      tags: ['ðŸ”¥ Hot 2025', 'Recurring', 'High EPC'],
+      tags: ['🔥 Hot 2025', 'Recurring', 'High EPC'],
       sprint: {
         day1: [
           'Sign up for top 2 programs (Jasper + Copy.ai)',
@@ -1336,7 +1336,7 @@ const OPPORTUNITIES = {
     {
       id: 'hosting',
       name: 'Web Hosting & Domains',
-      icon: 'ðŸŒ',
+      icon: '🌐',
       subtitle: 'Evergreen hosting and domain affiliate programs',
       programs: [
         { name: 'Bluehost', commission: '$65-130/sale', cookie: '90 days', payout: '$100', approval: 'Easy' },
@@ -1368,7 +1368,7 @@ const OPPORTUNITIES = {
     {
       id: 'trading',
       name: 'Trading Platforms & Tools',
-      icon: 'ðŸ“ˆ',
+      icon: '📈',
       subtitle: 'Promote trading apps, brokers, and analysis tools',
       programs: [
         { name: 'Robinhood', commission: '$20-75/signup', cookie: '30 days', payout: '$100', approval: 'Medium' },
@@ -1400,7 +1400,7 @@ const OPPORTUNITIES = {
     {
       id: 'supplements',
       name: 'Health Supplements',
-      icon: 'ðŸ’Š',
+      icon: '💊',
       subtitle: 'Promote vitamins, protein, and wellness supplements',
       programs: [
         { name: 'Athletic Greens', commission: '$20-50/sale', cookie: '45 days', payout: '$100', approval: 'Medium' },
@@ -1432,7 +1432,7 @@ const OPPORTUNITIES = {
     {
       id: 'online-courses',
       name: 'Online Course Platforms',
-      icon: 'ðŸŽ“',
+      icon: '🎓',
       subtitle: 'Promote learning platforms and course creators',
       programs: [
         { name: 'Skillshare', commission: '$10/trial', cookie: '30 days', payout: '$50', approval: 'Easy' },
@@ -1464,7 +1464,7 @@ const OPPORTUNITIES = {
     {
       id: 'amazon',
       name: 'Amazon Associates',
-      icon: 'ðŸ“¦',
+      icon: '📦',
       subtitle: 'Promote physical products across categories',
       programs: [
         { name: 'Amazon Associates', commission: '1-10%', cookie: '24 hours', payout: '$10', approval: 'Easy' }
@@ -1492,7 +1492,7 @@ const OPPORTUNITIES = {
   ]
 };
 
-// â•â• STATE â•â•
+//  STATE 
 let state = {
   currentQuestion: 0,
   answers: {},
@@ -1510,12 +1510,25 @@ function generateVisitorId() {
 
 const $ = id => document.getElementById(id);
 
-// â•â• INIT â•â•
+//  INIT 
 function init() {
   renderQuestion();
   updateLiveCount();
   updateReferralUI();
   checkReferral();
+  handleUrlParams();
+}
+
+function handleUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('success') === 'true') {
+    localStorage.setItem('mavenPro', 'true');
+    showToast('Welcome to Pro! Unlimited analysis unlocked!');
+    window.history.replaceState({}, '', window.location.pathname);
+  }
+  if (params.get('canceled') === 'true') {
+    window.history.replaceState({}, '', window.location.pathname);
+  }
 }
 
 function updateLiveCount() {
@@ -1547,7 +1560,7 @@ function updateReferralUI() {
   }
 }
 
-// â•â• QUIZ â•â•
+//  QUIZ 
 function renderQuestion() {
   const q = QUESTIONS[state.currentQuestion];
   
@@ -1574,7 +1587,7 @@ function renderQuestion() {
   
   $('backBtn').classList.toggle('hidden', state.currentQuestion === 0);
   $('nextBtn').disabled = !state.answers[q.id];
-  $('nextBtn').textContent = state.currentQuestion === QUESTIONS.length - 1 ? 'Score My Opportunities â†’' : 'Continue â†’';
+  $('nextBtn').textContent = state.currentQuestion === QUESTIONS.length - 1 ? 'Score My Opportunities ->’' : 'Continue ->’';
 }
 
 function selectOption(value) {
@@ -1598,7 +1611,7 @@ function prevQuestion() {
   }
 }
 
-// â•â• RESULTS â•â•
+//  RESULTS 
 async function generateResults() {
   showStage('loadingStage');
   
@@ -1719,13 +1732,13 @@ function renderResults(opportunities) {
   // Sprint plan
   $('sprintContent').innerHTML = `
     <div class="sprint-day">
-      <div class="day-header">ðŸ“… Day 1 â€” Setup & Create</div>
+      <div class="day-header">📅 Day 1 "” Setup & Create</div>
       <div class="day-tasks">
         ${top.sprint.day1.map(t => `<div class="task-item"><div class="task-check"></div><span>${t}</span></div>`).join('')}
       </div>
     </div>
     <div class="sprint-day">
-      <div class="day-header">ðŸ“… Day 2 â€” Launch & Distribute</div>
+      <div class="day-header">📅 Day 2 "” Launch & Distribute</div>
       <div class="day-tasks">
         ${top.sprint.day2.map(t => `<div class="task-item"><div class="task-check"></div><span>${t}</span></div>`).join('')}
       </div>
@@ -1766,11 +1779,11 @@ function renderResults(opportunities) {
   }
 }
 
-// â•â• SHARING â•â•
+//  SHARING 
 function shareTwitter() {
   const score = state.result[0].scores.total;
   const opp = state.result[0].name;
-  const text = `I just scored ${score}/100 on my affiliate opportunity match! ðŸ“Š\n\nTop match: ${opp}\n\nFind yours free ðŸ‘‡\nhttps://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  const text = `I just scored ${score}/100 on my affiliate opportunity match! 📊\n\nTop match: ${opp}\n\nFind yours free 👇\nhttps://marketmaven.dubltap.io/?ref=${state.visitorId}`;
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
   trackEvent('share', { platform: 'twitter' });
 }
@@ -1792,7 +1805,7 @@ function copyReferralLink() {
   showToast('Referral link copied!');
 }
 
-// â•â• EMAIL â•â•
+//  EMAIL 
 async function submitEmail() {
   const email = $('emailInput').value.trim();
   if (!email || !email.includes('@')) {
@@ -1804,34 +1817,73 @@ async function submitEmail() {
   localStorage.setItem('userEmail', email);
   
   try {
-    await fetch(`${API_BASE}/subscribe`, {
+    await fetch(`${API_BASE}/api/email-capture`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email,
-        visitorId: state.visitorId,
-        source: 'quiz_complete',
-        niche: state.answers.niche,
-        referredBy: localStorage.getItem('referredBy')
+        source: 'market-maven',
+        tags: ['maven-user', state.answers.niche || 'general']
       })
     });
   } catch {}
   
   closeModal('emailModal');
-  showToast('Welcome! Your opportunities are ready ðŸš€');
+  showToast('Welcome! Your opportunities are ready 🚀');
   trackEvent('email_signup');
 }
 
-function subscribePro() {
+// Stripe Price IDs for Market Maven
+const STRIPE_PRICES = {
+  monthly: 'price_1SsU1dBkYqg7J4R7heQx4a7b',
+  annual: 'price_1SsU42BkYqg7J4R7KE9xmJrg'
+};
+
+let selectedPlan = 'annual';
+
+async function subscribePro() {
   trackEvent('upgrade_click');
   showToast('Opening checkout...');
+  
+  try {
+    const response = await fetch(`${API_BASE}/api/create-checkout`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        priceId: STRIPE_PRICES[selectedPlan],
+        email: state.email,
+        appName: 'market-maven',
+        successUrl: window.location.href + '?success=true',
+        cancelUrl: window.location.href + '?canceled=true'
+      })
+    });
+    
+    if (response.ok) {
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    } else {
+      showToast('Checkout error. Please try again.');
+    }
+  } catch (error) {
+    showToast('Checkout error. Please try again.');
+  }
+}
+
+function selectPlan(plan) {
+  selectedPlan = plan;
+  document.querySelectorAll('.pricing-option').forEach(el => el.classList.remove('selected'));
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add('selected');
+  }
 }
 
 function showUpgradeModal() {
   showModal('upgradeModal');
 }
 
-// â•â• UTILITIES â•â•
+//  UTILITIES 
 function showStage(stageId) {
   document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
   $(stageId).classList.add('active');
@@ -1857,7 +1909,7 @@ function resetQuiz() {
 }
 
 function trackEvent(event, data = {}) {
-  fetch(`${API_BASE}/track`, {
+  fetch(`${API_BASE}/api/track`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ event, data, visitorId: state.visitorId })

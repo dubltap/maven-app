@@ -7,7 +7,7 @@
   <meta name="description" content="AI-powered affiliate opportunity finder. Discover your highest-converting programs, get a 48-hour sprint plan, and start earning commissions fast.">
   <meta property="og:title" content="Market Maven - Find Your Best Affiliate Opportunity">
   <meta property="og:description" content="I just scored 94/100 on my affiliate match! Find your highest-converting programs free.">
-  <meta property="og:image" content="https://marketmaven.dubltap.io/og-image.png">
+  <meta property="og:image" content="https://maven.dubltap.io/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1546,7 +1546,7 @@ function updateReferralUI() {
   }
   const refLink = $('referralLink');
   if (refLink) {
-    refLink.value = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+    refLink.value = `https://maven.dubltap.io/?ref=${state.visitorId}`;
   }
 }
 
@@ -1773,19 +1773,19 @@ function renderResults(opportunities) {
 function shareTwitter() {
   const score = state.result[0].scores.total;
   const opp = state.result[0].name;
-  const text = `I just scored ${score}/100 on my affiliate opportunity match! 📊\n\nTop match: ${opp}\n\nFind yours free 👇\nhttps://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  const text = `I just scored ${score}/100 on my affiliate opportunity match! 📊\n\nTop match: ${opp}\n\nFind yours free 👇\nhttps://maven.dubltap.io/?ref=${state.visitorId}`;
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
   trackEvent('share', { platform: 'twitter' });
 }
 
 function shareLinkedIn() {
-  const url = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
+  const url = `https://maven.dubltap.io/?ref=${state.visitorId}`;
   window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
   trackEvent('share', { platform: 'linkedin' });
 }
 
 function copyShareLink() {
-  navigator.clipboard?.writeText(`https://marketmaven.dubltap.io/?ref=${state.visitorId}`);
+  navigator.clipboard?.writeText(`https://maven.dubltap.io/?ref=${state.visitorId}`);
   showToast('Link copied!');
   trackEvent('share', { platform: 'copy' });
 }

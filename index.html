@@ -7,7 +7,7 @@
   <meta name="description" content="AI-powered affiliate opportunity finder. Discover your highest-converting programs, get a 48-hour sprint plan, and start earning commissions fast.">
   <meta property="og:title" content="Market Maven - Find Your Best Affiliate Opportunity">
   <meta property="og:description" content="I just scored 94/100 on my affiliate match! Find your highest-converting programs free.">
-  <meta property="og:image" content="https://maven.dubltap.io/og-image.png">
+  <meta property="og:image" content="https://marketmaven.dubltap.io/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +15,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     /*
-     * ══════════════════════════════════════════════════════════════
+     * ═══════════════════════════════════════════════════════════════
      * MARKET MAVEN - GOLDEN RATIO DESIGN SYSTEM
-     * Ï† (Phi) = 1.618033988749895
+     * φ (Phi) = 1.618033988749895
      * 
      * "Revenue is the only north star"
-     * ══════════════════════════════════════════════════════════════
+     * ═══════════════════════════════════════════════════════════════
      */
     
     :root {
-      /* ═ GOLDEN CONSTANTS ═ */
+      /* ══ GOLDEN CONSTANTS ══ */
       --phi: 1.618033988749895;
       --phi-inv: 0.618033988749895;
       
-      /* ═ GOLDEN TYPOGRAPHY ═ */
+      /* ══ GOLDEN TYPOGRAPHY ══ */
       --text-xs: 10px;
       --text-sm: 13px;
       --text-base: 16px;
@@ -39,7 +39,7 @@
       --text-4xl: 55px;
       --text-5xl: 68px;
       
-      /* ═ FIBONACCI SPACING ═ */
+      /* ══ FIBONACCI SPACING ══ */
       --space-3xs: 3px;
       --space-2xs: 5px;
       --space-xs: 8px;
@@ -49,17 +49,17 @@
       --space-xl: 55px;
       --space-2xl: 89px;
       
-      /* ═ GOLDEN TIMING ═ */
+      /* ══ GOLDEN TIMING ══ */
       --duration-fast: 162ms;
       --duration-base: 262ms;
       --duration-slow: 424ms;
       
-      /* ═ GOLDEN EASING ═ */
+      /* ══ GOLDEN EASING ══ */
       --ease-golden: cubic-bezier(0.382, 0, 0.618, 1);
       --ease-golden-out: cubic-bezier(0, 0.618, 0.382, 1);
       --ease-golden-bounce: cubic-bezier(0.382, 1.618, 0.618, 1);
       
-      /* ═ MONEY PURPLE/BLUE THEME ═ */
+      /* ══ MONEY PURPLE/BLUE THEME ══ */
       --bg-dark: #09090f;
       --bg-card: #12121a;
       --bg-elevated: #1a1a25;
@@ -78,19 +78,19 @@
       --text-secondary: #cbd5e1;
       --text-muted: #94a3b8;
       
-      /* ═ GRADIENTS ═ */
+      /* ══ GRADIENTS ══ */
       --gradient-brand: linear-gradient(137.5deg, var(--purple-500), var(--blue-500));
       --gradient-money: linear-gradient(137.5deg, var(--purple-400), var(--cyan-400));
       --gradient-gold: linear-gradient(137.5deg, var(--gold-400), #f59e0b);
       --gradient-glow: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15), transparent 70%);
       
-      /* ═ SHADOWS ═ */
+      /* ══ SHADOWS ══ */
       --shadow-sm: 0 2px 5px rgba(0,0,0,0.3);
       --shadow-md: 0 5px 13px rgba(0,0,0,0.35);
       --shadow-lg: 0 13px 34px rgba(0,0,0,0.4);
       --shadow-glow: 0 0 34px rgba(139, 92, 246, 0.25);
       
-      /* ═ RADIUS ═ */
+      /* ══ RADIUS ══ */
       --radius-sm: 5px;
       --radius-md: 8px;
       --radius-lg: 13px;
@@ -120,7 +120,7 @@
       z-index: 1;
     }
     
-    /* ═ ANIMATED BACKGROUND ═ */
+    /* ══ ANIMATED BACKGROUND ══ */
     .bg-effects {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -156,7 +156,7 @@
       background-size: 55px 55px;
     }
     
-    /* ═ ANNOUNCEMENT BAR ═ */
+    /* ══ ANNOUNCEMENT BAR ══ */
     .announcement-bar {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -172,7 +172,7 @@
     
     body.has-announcement { padding-top: 42px; }
     
-    /* ═ HEADER ═ */
+    /* ══ HEADER ══ */
     header {
       text-align: center;
       margin-bottom: var(--space-xl);
@@ -219,7 +219,7 @@
       color: var(--text-secondary);
     }
     
-    /* ═ SOCIAL PROOF ═ */
+    /* ══ SOCIAL PROOF ══ */
     .social-proof {
       display: flex;
       align-items: center;
@@ -242,11 +242,11 @@
       color: var(--purple-400);
     }
     
-    /* ═ STAGES ═ */
+    /* ══ STAGES ══ */
     .stage { display: none; animation: fadeUp var(--duration-slow) var(--ease-golden-out); }
     .stage.active { display: block; }
     
-    /* ═ QUIZ CARD ═ */
+    /* ══ QUIZ CARD ══ */
     .quiz-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.15);
@@ -265,7 +265,7 @@
       background: var(--gradient-brand);
     }
     
-    /* ═ PROGRESS BAR ═ */
+    /* ══ PROGRESS BAR ══ */
     .progress-bar {
       display: flex;
       gap: var(--space-xs);
@@ -294,7 +294,7 @@
       margin-bottom: var(--space-lg);
     }
     
-    /* ═ OPTIONS ═ */
+    /* ══ OPTIONS ══ */
     .options-grid {
       display: grid;
       gap: var(--space-sm);
@@ -330,7 +330,7 @@
     .option-label { font-weight: 500; }
     .option-desc { font-size: var(--text-sm); color: var(--text-muted); margin-top: 2px; }
     
-    /* ═ NAV BUTTONS ═ */
+    /* ══ NAV BUTTONS ══ */
     .nav-row {
       display: flex;
       gap: var(--space-sm);
@@ -371,7 +371,7 @@
       border: 2px solid rgba(255,255,255,0.15);
     }
     
-    /* ═ LOADING ═ */
+    /* ══ LOADING ══ */
     .loading-container {
       text-align: center;
       padding: var(--space-2xl) 0;
@@ -432,7 +432,7 @@
       border-color: var(--purple-500);
     }
     
-    /* ═ RESULTS ═ */
+    /* ══ RESULTS ══ */
     .results-header {
       text-align: center;
       margin-bottom: var(--space-xl);
@@ -444,7 +444,7 @@
       margin-bottom: var(--space-sm);
     }
     
-    /* ═ SCORE CARD ═ */
+    /* ══ SCORE CARD ══ */
     .score-card {
       background: var(--bg-card);
       border: 2px solid var(--purple-500);
@@ -507,7 +507,7 @@
       margin-top: 2px;
     }
     
-    /* ═ OPPORTUNITY CARD ═ */
+    /* ══ OPPORTUNITY CARD ══ */
     .opportunity-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.15);
@@ -528,7 +528,7 @@
     }
     
     .opportunity-card.featured::before {
-      content: ' TOP MATCH';
+      content: '🏆 TOP MATCH';
       position: absolute;
       top: var(--space-sm);
       right: var(--space-sm);
@@ -610,7 +610,7 @@
     .tag.hot { background: rgba(251,191,36,0.15); color: var(--gold-400); }
     .tag.easy { background: rgba(74,222,128,0.15); color: var(--green-400); }
     
-    /* ═ SPRINT PLAN ═ */
+    /* ══ SPRINT PLAN ══ */
     .sprint-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -667,7 +667,7 @@
       margin-top: 2px;
     }
     
-    /* ═ PROGRAM TABLE ═ */
+    /* ══ PROGRAM TABLE ══ */
     .programs-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -713,7 +713,7 @@
       font-weight: 600;
     }
     
-    /* ═ SHARE CARD ═ */
+    /* ══ SHARE CARD ══ */
     .share-card {
       background: linear-gradient(137.5deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15));
       border: 2px solid var(--purple-500);
@@ -760,7 +760,7 @@
     .share-btn.linkedin { background: #0a66c2; color: white; }
     .share-btn.copy { background: white; color: #000; }
     
-    /* ═ REFERRAL CARD ═ */
+    /* ══ REFERRAL CARD ══ */
     .referral-card {
       background: linear-gradient(137.5deg, #fef3c7, #fde68a);
       border-radius: var(--radius-2xl);
@@ -819,7 +819,7 @@
       cursor: pointer;
     }
     
-    /* ═ CTA SECTION ═ */
+    /* ══ CTA SECTION ══ */
     .cta-section {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -853,7 +853,7 @@
       font-weight: bold;
     }
     
-    /* ═ KILL/SCALE RULES ═ */
+    /* ══ KILL/SCALE RULES ══ */
     .rules-card {
       background: var(--bg-card);
       border: 1px solid rgba(139,92,246,0.1);
@@ -895,7 +895,7 @@
     
     .rule-list li::before { content: '•'; color: var(--text-muted); }
     
-    /* ═ MODALS ═ */
+    /* ══ MODALS ══ */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -965,7 +965,7 @@
     .modal-terms { text-align: center; font-size: var(--text-xs); color: var(--text-muted); margin-top: var(--space-md); }
     .modal-terms a { color: var(--purple-400); }
     
-    /* ═ TOAST ═ */
+    /* ══ TOAST ══ */
     .toast {
       position: fixed;
       bottom: var(--space-lg);
@@ -986,7 +986,7 @@
     
     .toast.show { transform: translateX(-50%) translateY(0); }
     
-    /* ═ FOOTER ═ */
+    /* ══ FOOTER ══ */
     .footer {
       text-align: center;
       padding: var(--space-lg) 0;
@@ -1009,7 +1009,7 @@
 <body class="has-announcement">
   <!-- Announcement Bar -->
   <div class="announcement-bar" onclick="showUpgradeModal()">
-    🔥 <span id="liveCount">847</span> affiliates scored today — <strong>Find your highest-payout opportunity →</strong>
+    🔥 Discover your highest-converting affiliate programs — <strong>Get started free →</strong>
   </div>
   
   <!-- Background -->
@@ -1031,10 +1031,10 @@
       
       <div class="social-proof">
         <div class="proof-item">
-          💰 <span class="proof-number" id="totalEarned">$2.4M</span> tracked commissions
+          💰 AI-powered opportunity matching
         </div>
         <div class="proof-item">
-          ⚡ <span class="proof-number">14 days</span> avg. first sale
+          âš¡ <span class="proof-number">14 days</span> avg. first sale
         </div>
       </div>
     </header>
@@ -1047,7 +1047,7 @@
         <div class="question-text" id="questionText"></div>
         <div class="options-grid" id="optionsGrid"></div>
         <div class="nav-row">
-          <button class="btn btn-secondary hidden" id="backBtn" onclick="prevQuestion()"> Back</button>
+          <button class="btn btn-secondary hidden" id="backBtn" onclick="prevQuestion()">← Back</button>
           <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Continue →</button>
         </div>
       </div>
@@ -1057,7 +1057,7 @@
     <div class="stage" id="loadingStage">
       <div class="quiz-card">
         <div class="loading-container">
-          <div class="loading-icon"></div>
+          <div class="loading-icon">🔍</div>
           <p class="loading-text">Scoring opportunities...</p>
           <div class="loading-steps">
             <div class="loading-step" id="loadStep1"><div class="step-check">✓</div><span>Scanning affiliate networks</span></div>
@@ -1106,13 +1106,13 @@
       
       <!-- 48-Hour Sprint -->
       <div class="sprint-card" id="sprintPlan">
-        <div class="sprint-title">⚡ Your 48-Hour Sprint Plan</div>
+        <div class="sprint-title">âš¡ Your 48-Hour Sprint Plan</div>
         <div id="sprintContent"></div>
       </div>
       
       <!-- Kill/Scale Rules -->
       <div class="rules-card">
-        <div class="sprint-title"> Kill/Scale Rules</div>
+        <div class="sprint-title">📏 Kill/Scale Rules</div>
         <div class="rules-grid">
           <div class="rule-section kill">
             <h4>🛑 Kill If:</h4>
@@ -1133,7 +1133,7 @@
         <h3>🔓 Share to Unlock Full Playbook</h3>
         <p>Get detailed tutorials, asset templates, and tracking setup guides!</p>
         <div class="share-buttons">
-          <button class="share-btn twitter" onclick="shareTwitter()">X Share Score</button>
+          <button class="share-btn twitter" onclick="shareTwitter()">𝕏 Share Score</button>
           <button class="share-btn linkedin" onclick="shareLinkedIn()">💼 LinkedIn</button>
           <button class="share-btn copy" onclick="copyShareLink()">🔗 Copy Link</button>
         </div>
@@ -1141,7 +1141,7 @@
       
       <!-- Referral Card -->
       <div class="referral-card">
-        <h3> Give 3, Get Pro Free</h3>
+        <h3>🎁 Give 3, Get Pro Free</h3>
         <p>Help 3 friends find their affiliate opportunity and unlock all features!</p>
         <div class="referral-progress">
           <div class="referral-dot" id="ref1">1</div>
@@ -1167,7 +1167,7 @@
           <div class="cta-feature">Private community</div>
         </div>
         <button class="btn btn-primary" style="width: 100%" onclick="showUpgradeModal()">
-          Start 7-Day Free Trial — $19/mo
+          Start 7-Day Free Trial — $9.99/mo
         </button>
       </div>
       
@@ -1175,9 +1175,13 @@
         🔄 Score Another Niche
       </button>
       
-      <div class="footer">
-        Made with 💜 by <a href="https://dubltap.io">dubltap.io</a><br>
-        <small>Revenue is the only north star.</small>
+            <div class="footer" style="text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div style="margin-bottom: 0.75rem;">
+          <a href="https://dubltap.io/privacy" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; margin: 0 0.75rem; font-size: 0.875rem;">Privacy Policy</a>
+          <span style="opacity: 0.3; color: var(--text-muted);">|</span>
+          <a href="https://dubltap.io/terms" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; margin: 0 0.75rem; font-size: 0.875rem;">Terms of Service</a>
+        </div>
+        <small style="opacity: 0.5;">© 2026 dubltap.io LLC - ALL RIGHTS RESERVED - dubltap F1</small>
       </div>
     </div>
   </div>
@@ -1198,7 +1202,7 @@
       </div>
       <input type="email" class="modal-input" id="emailInput" placeholder="your@email.com">
       <button class="btn btn-primary" style="width: 100%" onclick="submitEmail()">Unlock My Opportunities →</button>
-      <p class="modal-terms">By continuing, you agree to our <a href="#">Terms</a>. Unsubscribe anytime.</p>
+      <p class="modal-terms">By continuing, you agree to our <a href="https://dubltap.io/terms" target="_blank" rel="noopener" style="color: inherit;">Terms</a> & <a href="https://dubltap.io/privacy" target="_blank" rel="noopener" style="color: inherit;">Privacy Policy</a>. Unsubscribe anytime.</p>
     </div>
   </div>
   
@@ -1219,11 +1223,8 @@
           <li>Private affiliate community</li>
         </ul>
       </div>
-      <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro('annual')">
-        Go Pro - $149/year (Save 35%)
-      </button>
-      <button class="btn btn-secondary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro('monthly')">
-        $19/month
+      <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro()">
+        Start 7-Day Free Trial — $9.99/mo
       </button>
       <button class="btn btn-secondary" style="width: 100%" onclick="closeModal('upgradeModal')">Maybe Later</button>
       <p class="modal-terms">Cancel anytime. 30-day money back guarantee.</p>
@@ -1237,18 +1238,18 @@
   </div>
 
 <script>
-// ══════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════
 // MARKET MAVEN - AFFILIATE OPPORTUNITY SCORER
 // "Revenue is the only north star"
-// ══════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════
 
 const PHI = 1.618033988749895;
 
 const API_BASE = window.location.hostname === 'localhost'
   ? 'http://localhost:3002/api'
-  : 'https://api.dubltap.io';
+  : 'https://api.marketmaven.dubltap.io/api';
 
-// ═ QUIZ DATA ═
+// ══ QUIZ DATA ══
 const QUESTIONS = [
   {
     id: 'experience',
@@ -1263,7 +1264,7 @@ const QUESTIONS = [
     id: 'channels',
     question: "What's your strongest traffic channel?",
     options: [
-      { value: 'seo', icon: '', label: 'SEO / Blog Content', desc: 'Organic search traffic' },
+      { value: 'seo', icon: '🔍', label: 'SEO / Blog Content', desc: 'Organic search traffic' },
       { value: 'social', icon: '📱', label: 'Social Media', desc: 'TikTok, Instagram, X, YouTube' },
       { value: 'email', icon: '📧', label: 'Email List', desc: 'Newsletter subscribers' },
       { value: 'paid', icon: '💳', label: 'Paid Ads', desc: 'Facebook, Google, native ads' },
@@ -1303,7 +1304,7 @@ const QUESTIONS = [
   }
 ];
 
-// ═ OPPORTUNITIES DATABASE ═
+// ══ OPPORTUNITIES DATABASE ══
 const OPPORTUNITIES = {
   saas: [
     {
@@ -1339,7 +1340,7 @@ const OPPORTUNITIES = {
     {
       id: 'hosting',
       name: 'Web Hosting & Domains',
-      icon: '',
+      icon: '🌐',
       subtitle: 'Evergreen hosting and domain affiliate programs',
       programs: [
         { name: 'Bluehost', commission: '$65-130/sale', cookie: '90 days', payout: '$100', approval: 'Easy' },
@@ -1495,7 +1496,7 @@ const OPPORTUNITIES = {
   ]
 };
 
-// ═ STATE ═
+// ══ STATE ══
 let state = {
   currentQuestion: 0,
   answers: {},
@@ -1513,7 +1514,7 @@ function generateVisitorId() {
 
 const $ = id => document.getElementById(id);
 
-// ═ INIT ═
+// ══ INIT ══
 function init() {
   renderQuestion();
   updateLiveCount();
@@ -1525,7 +1526,7 @@ function updateLiveCount() {
   const base = 847;
   const hour = new Date().getHours();
   const variation = Math.floor(Math.random() * 30) + (hour * 3);
-  $('liveCount').textContent = (base + variation).toLocaleString();
+  // Social proof display
 }
 
 function checkReferral() {
@@ -1546,11 +1547,11 @@ function updateReferralUI() {
   }
   const refLink = $('referralLink');
   if (refLink) {
-    refLink.value = `https://maven.dubltap.io/?ref=${state.visitorId}`;
+    refLink.value = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
   }
 }
 
-// ═ QUIZ ═
+// ══ QUIZ ══
 function renderQuestion() {
   const q = QUESTIONS[state.currentQuestion];
   
@@ -1601,7 +1602,7 @@ function prevQuestion() {
   }
 }
 
-// ═ RESULTS ═
+// ══ RESULTS ══
 async function generateResults() {
   showStage('loadingStage');
   
@@ -1769,23 +1770,23 @@ function renderResults(opportunities) {
   }
 }
 
-// ═ SHARING ═
+// ══ SHARING ══
 function shareTwitter() {
   const score = state.result[0].scores.total;
   const opp = state.result[0].name;
-  const text = `I just scored ${score}/100 on my affiliate opportunity match! 📊\n\nTop match: ${opp}\n\nFind yours free 👇\nhttps://maven.dubltap.io/?ref=${state.visitorId}`;
+  const text = `I just scored ${score}/100 on my affiliate opportunity match! 📊\n\nTop match: ${opp}\n\nFind yours free 👇\nhttps://marketmaven.dubltap.io/?ref=${state.visitorId}`;
   window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
   trackEvent('share', { platform: 'twitter' });
 }
 
 function shareLinkedIn() {
-  const url = `https://maven.dubltap.io/?ref=${state.visitorId}`;
+  const url = `https://marketmaven.dubltap.io/?ref=${state.visitorId}`;
   window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
   trackEvent('share', { platform: 'linkedin' });
 }
 
 function copyShareLink() {
-  navigator.clipboard?.writeText(`https://maven.dubltap.io/?ref=${state.visitorId}`);
+  navigator.clipboard?.writeText(`https://marketmaven.dubltap.io/?ref=${state.visitorId}`);
   showToast('Link copied!');
   trackEvent('share', { platform: 'copy' });
 }
@@ -1795,7 +1796,7 @@ function copyReferralLink() {
   showToast('Referral link copied!');
 }
 
-// ═ EMAIL ═
+// ══ EMAIL ══
 async function submitEmail() {
   const email = $('emailInput').value.trim();
   if (!email || !email.includes('@')) {
@@ -1825,28 +1826,16 @@ async function submitEmail() {
   trackEvent('email_signup');
 }
 
-function subscribePro(plan) {
-  plan = plan || 'annual';
+function subscribePro() {
   trackEvent('upgrade_click');
-  showToast('Redirecting to checkout...');
-  
-  const prices = {
-    monthly: 'price_1SsU1dBkYqg7J4R7heQx4a7b',
-    annual: 'price_1SsU42BkYqg7J4R7KE9xmJrg'
-  };
-  
-  const email = state.email || localStorage.getItem('userEmail') || '';
-  const successUrl = encodeURIComponent(window.location.origin + '?upgraded=true');
-  const cancelUrl = encodeURIComponent(window.location.origin);
-  
-  window.location.href = 'https://api.dubltap.io/create-checkout?priceId=' + prices[plan] + '&email=' + email + '&success_url=' + successUrl + '&cancel_url=' + cancelUrl;
+  showToast('Opening checkout...');
 }
 
 function showUpgradeModal() {
   showModal('upgradeModal');
 }
 
-// ═ UTILITIES ═
+// ══ UTILITIES ══
 function showStage(stageId) {
   document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
   $(stageId).classList.add('active');

@@ -1166,11 +1166,33 @@
           <div class="cta-feature">Tracking setup guides</div>
           <div class="cta-feature">Private community</div>
         </div>
-        <button class="btn btn-primary" style="width: 100%" onclick="showUpgradeModal()">
-          Start 7-Day Free Trial — $9.99/mo
-        </button>
+        <div style="display: flex; gap: 0.75rem; width: 100%;">
+          <button class="btn btn-primary" style="flex: 1;" onclick="subscribePro('monthly')">
+            Monthly — $19/mo
+          </button>
+          <button class="btn btn-primary" style="flex: 1; background: linear-gradient(135deg, #f59e0b, #d97706);" onclick="subscribePro('annual')">
+            Annual — $149/yr <small style="display:block; font-size:0.75rem; opacity:0.9;">Save 35%</small>
+          </button>
+        </div>
       </div>
       
+      <!-- Email Registration CTA -->
+      <div class="cta-section" style="margin-top: var(--space-lg); background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15)); border: 1px solid rgba(99, 102, 241, 0.3);">
+        <h3>📧 Stay Ahead of the Game</h3>
+        <p>Get weekly affiliate insights, hot opportunities, and expert tips delivered to your inbox.</p>
+        <div id="emailCTAForm" style="display: flex; gap: 0.5rem; width: 100%; margin-top: var(--space-sm);">
+          <input type="email" id="ctaEmailInput" placeholder="Enter your email" style="flex: 1; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white; font-size: 1rem; outline: none;" />
+          <button class="btn btn-primary" onclick="submitEmailCTA()" style="white-space: nowrap;">
+            Sign Up Free
+          </button>
+        </div>
+        <div id="emailCTASuccess" style="display: none; text-align: center; padding: 1rem;">
+          <span style="font-size: 1.5rem;">✅</span>
+          <p style="margin-top: 0.5rem; color: var(--text-primary);">You're in! Check your inbox for a welcome email.</p>
+        </div>
+        <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 0.5rem;">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+
       <button class="btn btn-secondary" style="width: 100%; margin-top: var(--space-md);" onclick="resetQuiz()">
         🔄 Score Another Niche
       </button>
@@ -1223,9 +1245,14 @@
           <li>Private affiliate community</li>
         </ul>
       </div>
-      <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-sm);" onclick="subscribePro()">
-        Start 7-Day Free Trial — $9.99/mo
-      </button>
+      <div style="display: flex; gap: 0.75rem; width: 100%; margin-bottom: var(--space-sm);">
+        <button class="btn btn-primary" style="flex: 1;" onclick="subscribePro('monthly')">
+          Monthly — $19/mo
+        </button>
+        <button class="btn btn-primary" style="flex: 1; background: linear-gradient(135deg, #f59e0b, #d97706);" onclick="subscribePro('annual')">
+          Annual — $149/yr <small style="display:block; font-size:0.75rem; opacity:0.9;">Save 35%</small>
+        </button>
+      </div>
       <button class="btn btn-secondary" style="width: 100%" onclick="closeModal('upgradeModal')">Maybe Later</button>
       <p class="modal-terms">Cancel anytime. 30-day money back guarantee.</p>
     </div>
@@ -1826,9 +1853,51 @@ async function submitEmail() {
   trackEvent('email_signup');
 }
 
-function subscribePro() {
+function subscribePro(plan) {
   trackEvent('upgrade_click');
-  showToast('Opening checkout...');
+  showToast('Redirecting to checkout...');
+  const priceId = plan === 'annual' 
+    ? 'price_1SsU1dBkYqg7J4R7heQx4a7b' 
+    : 'price_1SsU1dBkYqg7J4R7heQx4a7b';
+  const baseUrl = window.location.origin;
+  const params = new URLSearchParams({
+    priceId: priceId,
+    success_url: baseUrl + '/?success=true',
+    cancel_url: baseUrl + '/?canceled=true'
+  });
+  window.location.href = 'https://api.dubltap.io/create-checkout?' + params.toString();
+}
+
+function submitEmailCTA() {
+  const emailInput = document.getElementById('ctaEmailInput');
+  const email = emailInput.value.trim();
+  if (!email || !email.includes('@')) {
+    showToast('Please enter a valid email address');
+    return;
+  }
+  const form = document.getElementById('emailCTAForm');
+  const success = document.getElementById('emailCTASuccess');
+  
+  fetch('https://api.dubltap.io/api/email-capture', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      email: email,
+      source: 'market-maven',
+      tags: ['market-maven', 'cta-signup']
+    })
+  })
+  .then(r => r.json())
+  .then(data => {
+    form.style.display = 'none';
+    success.style.display = 'block';
+    trackEvent('email_signup');
+    showToast('Welcome aboard!');
+  })
+  .catch(err => {
+    showToast('Something went wrong. Please try again.');
+    console.error('Email capture error:', err);
+  });
 }
 
 function showUpgradeModal() {

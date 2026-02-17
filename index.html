@@ -1857,8 +1857,8 @@ function subscribePro(plan) {
   trackEvent('upgrade_click');
   showToast('Redirecting to checkout...');
   const priceId = plan === 'annual' 
-    ? 'price_1SsU1dBkYqg7J4R7heQx4a7b' 
-    : 'price_1SsU42BkYqg7J4R7KE9xmJrg';
+          ? 'price_1SsU42BkYqg7J4R7KE9xmJrg'
+          : 'price_1SsU1dBkYqg7J4R7heQx4a7b';
   const baseUrl = window.location.origin;
   const params = new URLSearchParams({
     priceId: priceId,

@@ -1835,7 +1835,7 @@ async function submitEmail() {
   localStorage.setItem('userEmail', email);
   
   try {
-    await fetch(`${API_BASE}/subscribe`, {
+    await fetch(`${API_BASE}/api/email-capture`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

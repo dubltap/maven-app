@@ -1213,7 +1213,6 @@
   <!-- Email Modal -->
   <div class="modal-overlay" id="emailModal">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('emailModal')">×</button>
       <div class="modal-icon">📊</div>
       <h2>Your Opportunities Are Ready!</h2>
       <p class="subtitle">Enter your email to unlock your scored opportunities and sprint plan</p>
@@ -1649,13 +1648,15 @@ async function generateResults() {
   const opportunities = scoreOpportunities();
   state.result = opportunities;
   
-  // Show email modal
-  if (!state.email) {
-    showModal('emailModal');
-  }
-  
-  renderResults(opportunities);
-  showStage('resultsStage');
+  // Email gate — must provide email before seeing results
+    if (!state.email) {
+        state.pendingMatches = opportunities;
+            showModal('emailModal');
+                return;
+                  }
+
+                    renderResults(opportunities);
+                      showStage('resultsStage');
 }
 
 function scoreOpportunities() {
@@ -1853,6 +1854,16 @@ async function submitEmail() {
   closeModal('emailModal');
   showToast('Welcome! Your opportunities are ready 🚀');
   trackEvent('email_signup');
+
+    // Fire Reddit conversion pixel on email capture
+      if (typeof rdt === 'function') rdt('track', 'Lead');
+
+        // Render pending results after email capture
+          if (state.pendingMatches) {
+              renderResults(state.pendingMatches);
+                  showStage('resultsStage');
+                      state.pendingMatches = null;
+                        }
 }
 
 function subscribePro(plan) {
